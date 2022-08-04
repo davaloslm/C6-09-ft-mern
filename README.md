@@ -13,9 +13,9 @@
 
 Colaboradores | Función | Contacto
 ------------- | ------------- | -------------
-Patricio Oliveto  | Full-Stack Developer | https://www.linkedin.com/in/patricio-oliveto-512996212/
-Leonardo Davalos  | Full-Stack Developer | https://www.linkedin.com/in/leonardo-davalos
-Francisco Reccia  | UX/UI Designer | https://www.linkedin.com/in/franciscoreccia/
-Matías Alonso  | Full-Stack Developer | https://www.linkedin.com/in/matiasmalonso 
-Mariana Ingrid Calle  | Full-Stack Developer | https://www.linkedin.com/in/mariana-ingrid-calle/
-Emiliano Oliveto | Full-Stack Developer | https://www.linkedin.com/in/emilianooliveto/
+🟡Patricio Oliveto  | Full-Stack Developer | https://www.linkedin.com/in/patricio-oliveto-512996212/
+🟡Leonardo Davalos  | Full-Stack Developer | https://www.linkedin.com/in/leonardo-davalos
+🟡Francisco Reccia  | UX/UI Designer | https://www.linkedin.com/in/franciscoreccia/
+🟡Matías Alonso  | Full-Stack Developer | https://www.linkedin.com/in/matiasmalonso 
+🟡Mariana Ingrid Calle  | Full-Stack Developer | https://www.linkedin.com/in/mariana-ingrid-calle/
+🟡Emiliano Oliveto | Full-Stack Developer | https://www.linkedin.com/in/emilianooliveto/
