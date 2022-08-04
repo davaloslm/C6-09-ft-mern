@@ -2,8 +2,8 @@
 
 # Comandos básicos para iniciar un trabajo con Git
 1) git init
-//OPCIONAL git add README.md
-2) git commit -m "first commit"
-3) git branch -M main
-4) git remote add origin https://github.com/pulioliveto/test.git
-5) git push -u origin main
+2)//OPCIONAL git add README.md
+3) git commit -m "first commit"
+4) git branch -M main
+5) git remote add origin https://github.com/pulioliveto/test.git
+6) git push -u origin main
