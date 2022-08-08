@@ -1,9 +1,9 @@
 import React from 'react'
 
 const Detail = () => {
-
-    <div>Detalles del curso</div>
-
+    return (
+        <div>Detalles del curso</div>
+        )   
 }
 
 
