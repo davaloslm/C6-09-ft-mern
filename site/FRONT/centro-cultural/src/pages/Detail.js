@@ -2,7 +2,7 @@ import React from 'react'
 
 const Detail = () => {
     return (
-        <div>Detalles del curso</div>
+        <div>Detalles del curso.</div>
         )   
 }
 
