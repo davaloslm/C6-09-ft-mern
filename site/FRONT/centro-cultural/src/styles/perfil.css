@@ -1,0 +1,17 @@
+@import url('./globals.css');
+#perfil{
+    padding: 10px;
+    
+}
+.perfil {
+    background-color: var(--color-secondary);
+    color: var(--blanco);
+    padding: 10px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    font-weight: bold;
+    
+    
+
+}
