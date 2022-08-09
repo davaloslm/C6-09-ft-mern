@@ -10,7 +10,7 @@ const NavBar = () => {
     <>
     <NavBarsocials />
     <div className="subHeader">
-      <img src={logo} alt="" />
+      <img src={logo} alt="logo" />
       <div className="title">
         <h3>Centro</h3>
         <h3>Cultural</h3>
