@@ -1,0 +1,22 @@
+input {
+    padding: 5px;
+    margin: 5px;
+    width: 95%;
+    border: none;
+    background-color: var(--gris);
+    height: 32px;       
+    font-style: italic;
+    font-size: 17px;
+    
+    
+}
+
+label {
+    font-family: 'Bebas Neue Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;
+    color: var(--font-primary);
+    
+}
