@@ -1,0 +1,50 @@
+@import url('./globals.css');
+header{
+    background-color: var(--color-main);
+    display:flex;
+    justify-content: space-between;
+    padding:5px;
+}
+header img{
+    margin-right:5px;
+}
+
+.icons{
+    color:white;
+    display:flex;
+    align-items:center;
+    margin-left:10px;
+}
+.icons i{ 
+    padding-right:25px;
+    font-size:16px;
+    display:flex;
+    align-items:center;
+}
+.subHeader{
+    display:flex;
+    position:sticky;
+    overflow:auto;
+    /* align-self:flex-start; */
+    top:0;
+    background-color:var(--blanco);
+    margin-top:15px;
+    align-items:center;
+    padding-left:10px;
+    padding-right:15px;
+}
+
+.subHeader .title{
+    text-transform:uppercase;
+    display:block;
+    width:100%;
+    margin-left:10px;
+    color: var(--font-primary);
+}
+.subHeader i{
+    display:flex;
+    justify-content: flex-end;
+    width:100%;
+    font-size:20px;
+
+}

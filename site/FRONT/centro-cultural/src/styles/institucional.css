@@ -1,0 +1,32 @@
+.subheader{
+    z-index:1000;
+}
+#institucional{
+    padding:12px;
+    font-size:18px;
+    line-height: 24px;
+}
+
+#institucional img {
+    position:relative;
+    margin:0 auto;
+    display:block;
+    z-index:-9;
+    margin-bottom:20px;
+}
+#institucional p{
+    margin-bottom:20px;
+}
+#institucional h3{
+    margin-bottom:20px;
+}
+#institucional ul{
+    margin-bottom:25px;
+    padding-left:20px;
+}
+#institucional ul li {
+    font-weight:200;
+    /* padding:5px; */
+    font-size:16px;
+    
+}

@@ -1,18 +1,20 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Footer from "./components/footer/Footer";
+// import Footer from "./components/footer/Footer";
 import NavBar from "./components/navBar/NavBar";
 import Home from "./pages/Home";
 import Institucional from "./pages/Institucional";
 import CursosTalleres from "./pages/CursosTalleres";
 import Detail from "./pages/Detail";
 import Perfil from "./pages/Perfil";
+import NavBarSocials from "../src/components/navBar/NavBarSocials"
+
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
 
-        <NavBar/>
+        <NavBar />
       
         <Routes>
           <Route path="/" element ={<Home/>} />
@@ -24,7 +26,7 @@ function App() {
 
         </Routes>
 
-        <Footer/>
+        <NavBarSocials/>
       
       </BrowserRouter>
 
