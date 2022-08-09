@@ -1,0 +1,68 @@
+@import url('./globals.css');
+
+.title-cs {
+    background-color: var(--color-secondary);
+    padding:10px;
+    color:var(--blanco);
+    font-weight:bold;
+    margin-top:15px;
+    margin-bottom:20px;
+}
+#cursosTalleres{
+    padding:12px;
+    font-size:18px;
+    line-height: 24px;
+}
+
+
+.group{
+    margin-top:55px;
+    background-color: var(--color-main);
+    border-radius:8px;
+    padding:5px;
+    margin-bottom:20px;
+}
+
+.group p{
+    font-size:18px;
+    padding-left:10px;
+    margin-bottom:5px;
+    font-weight:100;
+    color:var(--blanco);
+    margin-top:5px;
+}
+ul{
+    margin-top:15px;
+}
+ul li {
+    font-weight:bold;
+    line-height:20px;
+    margin-top:10px;
+}
+
+button{
+    display:block;
+    background-color: var(--color-secondary);
+    color:var(--blanco);
+    padding:15px;
+    font-weight:bold;
+    border-radius:10px;
+    font-size:16px;
+    border:none;
+    margin:0 auto;
+    margin-top:25px;
+    cursor:pointer;
+}
+
+.container-cursos{
+    display:flex;
+}
+
+.info-cursos{
+    margin-top:15px;
+}
+.info-cursos p{
+    line-height:20px;
+    margin-top:10px;
+    margin-left: 10px;
+}
