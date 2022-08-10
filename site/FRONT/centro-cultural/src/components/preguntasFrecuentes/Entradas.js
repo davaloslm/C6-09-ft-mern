@@ -1,11 +1,15 @@
 import React from 'react';
+import { FaSquareFull } from 'react-icons/fa';
 
 const Entradas = () => {
     return (
         <div className='faq-container'>
-            <span className='faq'>
-                ¿Cómo puedo Comprar una Entrada?
-            </span>
+            <div className='square-faq-container'>
+                <FaSquareFull className='square'/>
+                <span className='faq'>
+                    ¿Cómo puedo Comprar una Entrada?
+                </span>
+            </div>
             <p>
             Primero deberás registrarte con un perfíl de usuario.
             <br/>

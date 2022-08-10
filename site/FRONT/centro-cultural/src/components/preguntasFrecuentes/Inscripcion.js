@@ -1,11 +1,16 @@
 import React from 'react';
+import { FaSquareFull } from 'react-icons/fa';
+
 
 const Inscripcion = () => {
     return (
         <div className='faq-container'>
-            <span className='faq'>
-                ¿Cómo me inscribo a los Cursos y Talleres?
-            </span>
+            <div className='square-faq-container'>
+                <FaSquareFull className='square'/>
+                <span className='faq'>
+                    ¿Cómo me inscribo a los Cursos y Talleres?
+                </span>
+            </div>
             <p>
             Primero deberás registrarte con un perfíl de usuario.
             <br/>

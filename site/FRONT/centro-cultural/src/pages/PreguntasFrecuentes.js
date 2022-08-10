@@ -7,22 +7,24 @@ import Contacto from "../components/preguntasFrecuentes/Contacto"
 import Registro from "../components/preguntasFrecuentes/Registro"
 import Inscripcion from "../components/preguntasFrecuentes/Inscripcion"
 import Entradas from "../components/preguntasFrecuentes/Entradas"
+import "../styles/preguntasFrecuentes.css"
 
 
 const PreguntasFrecuentes = () => {
     return (
-        <>
-            <div className='title'>
-            Cursos y Talleres
+        <>    
+            <section className='preguntas-frecuentes'>
+            <div className='title-pf'>
+            Preguntas Frecuentes
             </div>
-        
-            <section>
+
                 <Horarios/>
                 <ComoLlegar/>
                 <Contacto/>
                 <Registro/>
                 <Inscripcion/>
                 <Entradas/>
+
             </section>
         </>
     );
