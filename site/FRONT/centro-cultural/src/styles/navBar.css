@@ -38,6 +38,8 @@ header img{
     text-transform:uppercase;
     display:block;
     width:100%;
+    font-weight: bold;
+    font-size:24px;
     margin-left:10px;
     color: var(--font-primary);
 }

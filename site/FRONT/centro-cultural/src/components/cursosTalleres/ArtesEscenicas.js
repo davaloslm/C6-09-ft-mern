@@ -9,7 +9,7 @@ return (
     <>  
         <div className="group">
             <p>Imagen, Diseño y Creatividad en el vestuario</p>
-            <p className="subtitle">Artes Escénicas</p>
+            <p id="subtitle">Artes Escénicas</p>
         </div>
 
         <p>Nos introduciremos dentro del proceso proyectual de diseño de Vestuario para espectáculos.</p>

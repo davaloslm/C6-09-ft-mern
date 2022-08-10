@@ -2,7 +2,7 @@ import React from "react";
 import "./../styles/globals.css";
 import "./../styles/institucional.css";
 import "./../styles/navBar.css";
-import imgInstitucional from "./../assets/institucional.svg";
+import imgInstitucional from "./../assets/institucional.jpg";
 
 const Institucional = () => {
 	return (
