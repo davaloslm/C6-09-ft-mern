@@ -1,8 +1,14 @@
 import React from 'react'
+import Card from '../components/card/Card'
+import GridCard from '../components/gridCard/GridCard'
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <>
+      <Card/>
+      <GridCard/>
+
+    </>
   )
 }
 

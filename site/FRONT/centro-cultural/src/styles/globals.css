@@ -4,6 +4,7 @@
     padding:0;
     box-sizing: border-box;
 }
+
 body{
     font-family: bebas-neue-pro, sans-serif;
     color: var(--font-primary);
