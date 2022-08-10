@@ -1,0 +1,68 @@
+section.preguntas-frecuentes{
+    padding: 1rem;
+    font-size: 1rem;
+
+}
+
+.title-pf{
+    background-color: var(--color-secondary);
+    padding:10px;
+    color:var(--blanco);
+    font-weight:bold;
+    font-size: 20px;
+    line-height: 24px;
+    margin-top:15px;
+}
+
+div.square-faq-container{
+    display: flex;
+    margin: 1.5rem 0;
+}
+
+span.faq{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 100%;
+    width: 95%;
+}
+
+div.info-container{
+    margin-bottom: 1rem;
+}
+
+.square{
+    width: 16px;
+    height: 16px;
+    padding: 4px;
+    color: var(--color-main);
+    margin-top: 5px;
+}
+
+span{
+    display: block;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 110%;
+    margin: 4px 0;
+}
+
+p{
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 110%;
+}
+
+.map{
+    margin: 1rem 0;
+}
+
+div.redes{
+    display: flex;
+    margin: 0 25%;
+    justify-content: space-between;
+}
+
+.redes-icons{
+    color: var(--color-main);
+    font-size: 20px;
+}
