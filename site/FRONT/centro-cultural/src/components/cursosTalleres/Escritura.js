@@ -7,6 +7,7 @@ import {escritura} from './data.js'
 const Escritura = () => {
   return (
     <>
+    <div className="container-test">
     <div className="group">
             <p>Escritura Creativa</p>
             <p id="subtitle">Letras</p>
@@ -23,6 +24,7 @@ const Escritura = () => {
         )
         )}
     </DataCursos>
+    </div>
     </>
   )
 }

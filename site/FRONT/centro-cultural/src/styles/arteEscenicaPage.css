@@ -25,3 +25,23 @@
 .text-container-programacion p{
     font-weight:100;
 }
+@media screen and (min-width: 1024px){
+    #artes-escenicas {
+        padding:25px;
+    }
+    .container-programacion {
+        display:flex;
+        flex-wrap:wrap;
+        align-items: flex-end;
+        
+    }
+    .img-card-programacion{
+        width:450px;
+        margin: 0 auto;
+        margin-bottom: 25px;
+    }
+    .img-card-programacion img{
+        width:450px;
+        object-fit:contain;
+    }
+}

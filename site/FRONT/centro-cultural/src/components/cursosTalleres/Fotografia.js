@@ -7,6 +7,7 @@ import {fotografia} from './data.js'
 const Fotografia = () => {
   return (
     <>
+    <div className="container-test">
      <div className="group">
             <p>Fotografía Digital 1</p>
             <p id="subtitle">Fotografía</p>
@@ -22,6 +23,7 @@ const Fotografia = () => {
             </div>
             ))}
         </DataCursos>
+        </div>
     </>
   )
 }

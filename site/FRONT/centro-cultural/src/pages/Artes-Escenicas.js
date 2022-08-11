@@ -12,6 +12,7 @@ const ArtesEscenicasPage = () => {
     <section id="artes-escenicas">
         <p className="title-cs">Artes Escénicas</p>
         <h3>Programación</h3>
+        <div className="container-programacion">
         <div className="img-card-programacion">
             <img src={arte1} alt="" />
             <div className="text-container-programacion">
@@ -41,6 +42,7 @@ const ArtesEscenicasPage = () => {
                 <h3>El caso Arena Rodrigo contra la Danza Contemporánea</h3>
                 <p>Rodrigo Arena</p>
             </div>
+        </div>
         </div>
     </section>
   )

@@ -30,3 +30,31 @@
     font-size:16px;
     
 }
+#institucional #mapa {
+    display:none;
+}
+
+@media screen and (min-width: 1024px){
+    #institucional{
+        padding:30px;
+        font-size:20px;
+    }
+    #institucional ul li{
+        font-size:20px;
+        margin-bottom:25px;
+    }
+    .container-institucional{
+        display:flex;
+        flex-direction:row-reverse;
+        position:relative;
+        /* align-items:center; */
+    }
+    .container-institucional img{
+        height:300px;
+        object-fit: cover;
+    }
+    #institucional #mapa{
+        display:block;
+        width: 400px;
+    }
+}

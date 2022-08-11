@@ -9,6 +9,18 @@ body{
     color: var(--font-primary);
 }
 
+a{
+    color:white;
+    text-decoration:none;
+}
+iframe {
+    margin:0 auto;
+    display:block;
+}
+
+section {
+    padding:12px;
+}
 
 /* font-face{
     font-family: 'Bebas-Neue-Pro';
@@ -22,3 +34,14 @@ body{
     --blanco: #FAFAF9;
 }
 
+@media screen and (min-width: 1024px){
+    section{
+        padding:25px;
+    }
+
+    #mapa{
+        display:block;
+        margin:0 auto;
+        width: 400px;
+    }
+}

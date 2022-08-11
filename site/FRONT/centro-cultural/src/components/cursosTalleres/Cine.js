@@ -7,6 +7,7 @@ import {cine} from './data.js'
 const Cine = () => {
   return (
     <>
+    <div className="container-test">
         <div className="group">
             <p>Cine Latinoamericano: Una Introducción</p>
             <p id="subtitle">Cine y Televisión</p>
@@ -22,6 +23,7 @@ const Cine = () => {
             </div>
             ))}
         </DataCursos>
+        </div>
     </>
   )
 }

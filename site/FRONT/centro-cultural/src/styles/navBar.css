@@ -9,6 +9,7 @@ header img{
     margin-right:5px;
 }
 
+
 .icons{
     color:white;
     display:flex;
@@ -32,6 +33,7 @@ header img{
     align-items:center;
     padding-left:10px;
     padding-right:15px;
+    z-index:1000;
 }
 
 .subHeader .title{
@@ -50,3 +52,56 @@ header img{
     font-size:20px;
 
 }
+.container-header-desktop{
+    display:none;
+}
+
+@media screen and (min-width: 1024px){
+    .burger-icon {
+        display:none;
+    }
+        .container-header-desktop{
+            display:flex;
+            margin:0 auto;
+        }
+        .container-header-desktop li {
+            display:flex;
+            text-decoration:none;
+            list-style: none;
+            align-items:center;
+            text-align:center;
+            margin-left:70px;
+            font-size:16px;
+            padding-left:15px;
+            padding-right:15px;
+            border-radius:8px;
+            /* position:relative; */
+            /* float:left; */
+    
+        }
+        .container-header-desktop li:active{
+            background:var(--color-main);
+        }
+        .container-header-desktop li:hover{
+            background:var(--color-main);
+            color:white;
+        }
+        .container-header-desktop i li{
+            font-size:24px;
+
+        }
+        .container-header-desktop i li:hover{
+            cursor:pointer;
+            background:none;
+            color:inherit;
+        }
+        .container-header-desktop a{
+            color:inherit;
+            margin:0 auto;
+            display:flex;
+        }
+
+    
+    
+    
+    }

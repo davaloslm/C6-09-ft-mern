@@ -12,6 +12,7 @@ const CinePage = () => {
     <section id="artes-escenicas">
         <p className="title-cs">Cine</p>
         <h3>Programación</h3>
+        <div className="container-programacion">
         <div className="img-card-programacion">
             <img src={cine1} alt="" />
             <div className="text-container-programacion">
@@ -39,6 +40,7 @@ const CinePage = () => {
                 <h3>Lleno de Ruido y Dolor</h3>
                 <p>de Nacho Aguirre</p>
             </div>
+        </div>
         </div>
     </section>
   )

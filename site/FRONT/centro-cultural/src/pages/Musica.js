@@ -12,6 +12,7 @@ const Musica = () => {
     <section id="artes-escenicas">
         <p className="title-cs">Música</p>
         <h3>Programación</h3>
+        <div className="container-programacion">
         <div className="img-card-programacion">
             <img src={musica1} alt="" />
             <div className="text-container-programacion">
@@ -39,6 +40,7 @@ const Musica = () => {
                 <h3>Hombres Bien</h3>
                 <p>presenta su nuevo single “Ahora ve”</p>
             </div>
+        </div>
         </div>
     </section>
   )
