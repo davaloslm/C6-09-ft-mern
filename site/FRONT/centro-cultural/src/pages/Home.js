@@ -1,8 +1,16 @@
 import React from 'react'
+import Mapa from './../components/home/Mapa'
+import "./../styles/globals.css";
+import "./../styles/navBar.css";
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <div>
+      
+      Home
+      <hr/>
+      <Mapa />
+    </div>
   )
 }
 

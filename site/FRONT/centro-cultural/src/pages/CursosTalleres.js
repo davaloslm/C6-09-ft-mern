@@ -3,7 +3,9 @@ import ArtesEscenicas from './../components/cursosTalleres/ArtesEscenicas.js'
 import Cine from './../components/cursosTalleres/Cine.js'
 import Fotografia from './../components/cursosTalleres/Fotografia'
 import Escritura from './../components/cursosTalleres/Escritura'
+import Mapa from './../components/home/Mapa'
 import './../styles/cursosTalleres.css'
+import './../styles/globals.css'
 
 const CursosTalleres = () => {
   return (
@@ -14,11 +16,16 @@ const CursosTalleres = () => {
       <p>Todos se llevan a cabo en alguna de las salas del CSM, ubicado en Sarmiento 1551 - CABA.</p>
       <br/>
       <p>¡Te esperamos!</p>
+      <div className="container-cursosytalleres">
+        
       <ArtesEscenicas />
       <Cine />
       <Fotografia />
       <Escritura />
+      
+      </div>
       <br/> <br/>
+      <Mapa />
     </section>
   )
 }

@@ -7,10 +7,10 @@ const NavBarSocials = () => {
     <>
     <header>
     <div className="icons">
-        <i><FaFacebook /></i>
-        <i><FaTwitter /></i>
-        <i><FaInstagram /></i>
-        <i><FaYoutube /></i>
+        <a href="https://www.facebook.com/elculturalsanmartin" target="_blank" rel="noopener noreferrer"><i><FaFacebook /></i></a>
+        <a href="https://twitter.com/elculturalsm" target="_blank" rel="noopener noreferrer"><i><FaTwitter /></i></a>
+        <a href="https://www.instagram.com/elculturalsanmartin/" target="_blank" rel="noopener noreferrer"><i><FaInstagram /></i></a>
+        <a href="https://www.youtube.com/user/elculturalsanmartin" target="_blank" rel="noopener noreferrer"><i><FaYoutube /></i></a>
     </div>
       <img height="20px" src="https://www.hjflorida.com/wp-content/uploads/2022/05/logo-ba-footer.png" alt="" />
     </header>

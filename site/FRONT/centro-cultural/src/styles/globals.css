@@ -5,14 +5,27 @@
     box-sizing: border-box;
 }
 body{
-    font-family: bebas-neue-pro, sans-serif;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
     color: var(--font-primary);
 }
 
-font-face{
+a{
+    color:white;
+    text-decoration:none;
+}
+iframe {
+    margin:0 auto;
+    display:block;
+}
+
+section {
+    padding:12px;
+}
+
+/* font-face{
     font-family: 'Bebas-Neue-Pro';
     src: url(./../fonts/bebas-neue-pro/Bebas-Neue-Pro-Light.otf), url(./../fonts/bebas-neue-pro/Bebas-Neue-Pro-Regular.otf), url(./../fonts/bebas-neue-pro/Bebas-Neue-Pro-Bold.otf), url(./../fonts/bebas-neue-pro/Bebas-Neue-Pro-Thin.otf);
-}
+} */
 
 :root{
     --color-main: #323786;
@@ -22,3 +35,14 @@ font-face{
     --gris: #FBF1EF;
 }
 
+@media screen and (min-width: 1024px){
+    section{
+        padding:25px;
+    }
+
+    #mapa{
+        display:block;
+        margin:0 auto;
+        width: 400px;
+    }
+}

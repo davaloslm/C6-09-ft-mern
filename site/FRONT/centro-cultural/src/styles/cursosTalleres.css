@@ -22,14 +22,18 @@
     margin-bottom:20px;
 }
 
+#subtitle{
+    font-weight:200;
+}
 .group p{
     font-size:18px;
     padding-left:10px;
     margin-bottom:5px;
-    font-weight:100;
+    font-weight:500;
     color:var(--blanco);
     margin-top:5px;
 }
+
 ul{
     margin-top:15px;
 }
@@ -64,4 +68,28 @@ button{
     line-height:20px;
     margin-top:10px;
     margin-left: 10px;
+}
+@media screen and (min-width: 1024px){
+    #cursosTalleres {
+        padding:30px;
+    }
+    .container-cursosytalleres{
+        display:flex;
+        flex-wrap:wrap;
+        margin:0 auto;
+    }
+    .container-test{
+        width:600px;
+        margin:0 auto;
+        display:flex;
+        flex-direction:column;
+        justify-content: space-between;
+        
+    }
+    .container-test ul li {
+        list-style:none;
+    }
+    #mapa{
+        margin: 0 auto;
+    }
 }
