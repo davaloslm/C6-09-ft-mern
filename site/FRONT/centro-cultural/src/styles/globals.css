@@ -22,11 +22,6 @@ section {
     padding:12px;
 }
 
-/* font-face{
-    font-family: 'Bebas-Neue-Pro';
-    src: url(./../fonts/bebas-neue-pro/Bebas-Neue-Pro-Light.otf), url(./../fonts/bebas-neue-pro/Bebas-Neue-Pro-Regular.otf), url(./../fonts/bebas-neue-pro/Bebas-Neue-Pro-Bold.otf), url(./../fonts/bebas-neue-pro/Bebas-Neue-Pro-Thin.otf);
-} */
-
 :root{
     --color-main: #323786;
     --color-secondary:#D55F60;
@@ -34,6 +29,7 @@ section {
     --blanco: #FAFAF9;
     --gris: #FBF1EF;
 }
+
 
 @media screen and (min-width: 1024px){
     section{

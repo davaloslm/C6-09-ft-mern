@@ -24,16 +24,16 @@ function App() {
           <Route path="/" element ={<Home/>} />
           <Route path="/institucional" element ={<Institucional/>} />
           <Route path="/cursosytalleres" element ={<CursosTalleres/>} />
-<<<<<<< HEAD
+
           <Route path="/detail" element = {<Detail/>} />
           <Route path="/perfil" element = {<Perfil/>} />
 
-=======
+
           <Route path="/artes-escenicas" element ={<ArtesEscenicasPage/>} />
           <Route path="/artes-visuales" element ={<ArtesVisualesPage/>} />
           <Route path="/musica" element ={<Musica/>} />
           <Route path="/cine" element ={<Cine/>} />
->>>>>>> emiliano
+
 
         </Routes>
 
