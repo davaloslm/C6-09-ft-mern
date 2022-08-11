@@ -54,6 +54,7 @@ p{
 
 .map{
     margin: 1rem 0;
+    width: 100%;
 }
 
 div.redes{
@@ -65,4 +66,9 @@ div.redes{
 .redes-icons{
     color: var(--color-main);
     font-size: 20px;
+}
+
+div.answer-container{
+    display: none;
+
 }
