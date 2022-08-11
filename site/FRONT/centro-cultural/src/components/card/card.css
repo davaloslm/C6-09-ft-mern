@@ -1,0 +1,77 @@
+
+*{ /* reseteo CSS*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.card{
+
+    margin: 1rem;
+    color: white;
+}
+
+.divImgCard{
+    height: 225px;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    background-image: url("../../assets/img/eternidades.png");
+}
+
+.infoImgCard{
+    position:absolute;
+    bottom: 0;
+    right: 0;
+    width: 135px;
+    height: 22px;
+    background: #D55F60;
+    font-family: 'Antonio';
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 19px;
+    color: #FAFAF9;
+}
+
+.divInfoCard {
+    background: #323786;
+    padding: 0 10px;
+    height: 84px;
+}
+
+
+.titleCard{
+    font-family: 'Antonio';
+    font-weight: 700;
+    color: #FAFAF9;
+}
+
+.infoCard{
+    width: 308px;
+    height: 18px;
+    left: 26px;
+    top: 533px;
+    margin-top: 9px;
+    margin-bottom: 5px;
+    font-family: 'Antonio';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+
+    /* Blanco 1 */
+
+    color: #FAFAF9;
+}
+
+.subTitleCard{
+    width: 308px;
+    height: 18px;
+    left: 26px;
+    top: 506px;
+    font-family: 'Antonio';
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+    color: #FAFAF9;
+}

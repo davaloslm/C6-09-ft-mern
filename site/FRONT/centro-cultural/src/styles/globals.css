@@ -1,8 +1,13 @@
+
 *{
     margin:0;
     padding:0;
     box-sizing: border-box;
 }
+.subHeader{
+    z-index:100;    
+}
+
 body{
     font-family: bebas-neue-pro, sans-serif;
     color: var(--font-primary);
@@ -20,3 +25,4 @@ font-face{
     --blanco: #FAFAF9;
     --gris: #FBF1EF;
 }
+

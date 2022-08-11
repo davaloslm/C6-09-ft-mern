@@ -1,0 +1,32 @@
+@import url('./../../styles/globals.css');
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  background-color: #D9D9D9;
+  width: 328px;
+  height: 350px;
+  justify-content: center;
+  align-items: center;
+  padding-left: 15px;
+  margin-left: 16px;
+  padding-top: 25px
+}
+
+.formulario-input {
+  width: 288px;
+  height: 33px;
+}
+
+.formulario form>input {
+  margin-bottom: 20px;
+}
+
+
+.formulario-boton {
+  width: 70px;
+  height: 34px;
+  color: var(--blanco);
+  background-color: var(--color-main);
+  margin-top: 10px;
+}
