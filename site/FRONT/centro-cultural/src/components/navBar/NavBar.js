@@ -1,6 +1,7 @@
 import React from 'react'
+import { Link } from "react-router-dom";
 import NavBarsocials from './NavBarSocials'
-import { FaBars } from 'react-icons/fa';
+import { FaBars, FaSistrix, FaAngleDown, FaUserCircle } from 'react-icons/fa';
 import logo from './../../assets/atomo.svg'
 import './../../styles/navBar.css'
 
@@ -10,13 +11,26 @@ const NavBar = () => {
     <>
     <NavBarsocials />
     <div className="subHeader">
-      <img src={logo} alt="logo" />
+      <Link className="logo-ref" to="/"><img src={logo} alt="logo" /></Link>
       <div className="title">
         <h3>Centro</h3>
         <h3>Cultural</h3>
         <h3>San Martin</h3>
       </div>
-      <i><FaBars/></i>
+      
+     
+      <i className="burger-icon"><FaBars className="burger-icon"/></i>
+      
+        <ul className="container-header-desktop">
+          <Link to="/institucional"><li>Institucional</li></Link>
+          <li>Programación <span><FaAngleDown/></span>
+            
+          </li>
+          <Link to="/cursosytalleres"><li>Cursos/Talleres</li></Link>
+          <li>Preguntas Frecuentes</li>
+          <i><li><FaSistrix/></li></i>
+          <i><li><FaUserCircle/></li></i>
+        </ul>
       
     </div>
     
