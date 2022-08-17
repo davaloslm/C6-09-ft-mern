@@ -12,7 +12,7 @@ const Contacto = () => {
     const contacto = useRef()
 
     const handleClick = () =>{
-        if (contacto.current.style.display == "none") {
+        if (contacto.current.style.display === "none") {
             contacto.current.style.display = "block"
         } else{
             contacto.current.style.display = "none"
