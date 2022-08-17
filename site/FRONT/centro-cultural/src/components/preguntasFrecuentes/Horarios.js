@@ -1,29 +1,22 @@
-import React, { useRef } from 'react';
 import { FaSquareFull } from 'react-icons/fa';
 
 const Horarios = () => {
-    const horarios = useRef()
-
-    const handleClick = (e) =>{
-        e.preventDefault();
-        if (horarios.current.style.display === "none") {
-            horarios.current.style.display = "block"
-        } else{
-            horarios.current.style.display = "none"
-        }
-    }
+    
     return (
         <div className='faq-container'>
 
-            <div className='square-faq-container' onClick={handleClick}>
+            <label  htmlFor='checkbox-h'>
+            <div className='square-faq-container' >
 
                 <FaSquareFull className='square'/>
                 <span className='faq'>
                     ¿Cúales son sus horarios?
                 </span>
             </div>
+            </label>
+            <input id='checkbox-h' className='hiddenCheckbox' type="checkbox"></input>
 
-            <div className='answer-container' ref={horarios}>
+            <div className='answer-container' >
 
                 <div className='info-container'>
                     <span>

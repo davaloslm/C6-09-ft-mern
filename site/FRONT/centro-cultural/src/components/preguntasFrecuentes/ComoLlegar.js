@@ -1,28 +1,20 @@
-import React, { useRef } from 'react';
 import { FaSquareFull } from 'react-icons/fa';
 
 const ComoLlegar = () => {
-    const display = useRef();
-
-    const handleClick = ((e) =>{
-        e.preventDefault();
-        if (display.current.style.display === "none") {
-            display.current.style.display = "block"
-        } else{
-            display.current.style.display = "none"
-        }
-    }
-    )
-  
+   
     return (
         <div className='faq-container'>
-            <div className='square-faq-container' onClick={handleClick} >
-                <FaSquareFull className='square'/>
-                <span className='faq'>
-                    ¿Cómo llegar?
-                </span>
-            </div>
-            <div className='answer-container' ref={display}>
+            <label htmlFor='checkbox-cl'>
+                <div className='square-faq-container' >
+                    <FaSquareFull className='square'/>
+                    <span className='faq'>
+                        ¿Cómo llegar?
+                    </span>
+                </div>
+            </label>
+            <input id='checkbox-cl' className='hiddenCheckbox' type="checkbox"></input>
+            
+            <div className='answer-container' >
                 <p>
                     Nos encontrás en Sarmiento 1551
                 </p>

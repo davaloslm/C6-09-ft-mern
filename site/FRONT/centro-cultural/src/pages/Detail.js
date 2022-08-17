@@ -1,8 +1,27 @@
 import React from 'react'
+import Card from '../components/card/Card'
+import "../styles/detalleEvento.css"
 
 const Detail = () => {
     return (
-        <div>Detalles del curso.</div>
+        <>
+        <section className='event'>
+            <div className='title-event'>
+                Evento
+            </div>
+
+            <Card/>
+
+            <button>
+                Comprar entrada
+            </button>
+
+            <button>
+                Comprar entrada
+            </button>
+
+        </section>
+        </>
         )   
 }
 

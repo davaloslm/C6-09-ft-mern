@@ -4,6 +4,7 @@
     padding:0;
     box-sizing: border-box;
 }
+
 body{
     font-family: 'Fira Sans Extra Condensed', sans-serif;
     color: var(--font-primary);

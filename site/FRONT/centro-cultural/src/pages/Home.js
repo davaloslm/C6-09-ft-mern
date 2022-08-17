@@ -1,16 +1,14 @@
 import React from 'react'
-import Mapa from './../components/home/Mapa'
-import "./../styles/globals.css";
-import "./../styles/navBar.css";
+import Card from '../components/card/Card'
+import GridCard from '../components/gridCard/GridCard'
 
 const Home = () => {
   return (
-    <div>
-      
-      Home
-      <hr/>
-      <Mapa />
-    </div>
+    <>
+      <Card/>
+      <GridCard/>
+
+    </>
   )
 }
 

@@ -1,5 +1,4 @@
 import React from 'react';
-import { useRef } from 'react';
 import { FaSquareFull } from 'react-icons/fa';
 import { FaInstagram } from 'react-icons/fa';
 import { FaFacebook} from 'react-icons/fa';
@@ -9,26 +8,21 @@ import { FaTwitter } from 'react-icons/fa';
 
 const Contacto = () => {
     
-    const contacto = useRef()
-
-    const handleClick = () =>{
-        if (contacto.current.style.display === "none") {
-            contacto.current.style.display = "block"
-        } else{
-            contacto.current.style.display = "none"
-        }
-    }
-    
     return (
         <div className='faq-container'>
-            <div className='square-faq-container' onClick={handleClick} >
-                <FaSquareFull className='square'/>
-                <span className='faq'>
-                    ¿Cómo puedo contactarlos?
-                </span>
-            </div>
+            <label htmlFor='checkbox-c'>
+                <div className='square-faq-container' >
+                    <FaSquareFull className='square'/>
+                    <span className='faq'>
+                        ¿Cómo puedo contactarlos?
+                    </span>
+                </div>
+            </label>
 
-            <div className='answer-container' ref={contacto}>
+            <input id='checkbox-c' className='hiddenCheckbox' type="checkbox"></input>
+
+
+            <div className='answer-container' >
                 <div className='info-container'>
                     
                     <span>Dirección</span>
