@@ -18,13 +18,22 @@ const PreguntasFrecuentes = () => {
             Preguntas Frecuentes
             </div>
 
-                <Horarios/>
-                <ComoLlegar/>
-                <Contacto/>
+            <div className='responsive-container'>
+                <div className='responsive-horarios'>
+                    <Horarios/>
+                </div>
+                <div className='responsive-comollegar'>
+                    <ComoLlegar/>
+                </div>
+                <div className='responsive-contacto'>
+                    <Contacto/>
+                </div>
+            </div>
+             
                 <Registro/>
                 <Inscripcion/>
                 <Entradas/>
-
+            
             </section>
         </>
     );

@@ -1,26 +1,22 @@
-import React, { useRef } from 'react';
 import { FaSquareFull } from 'react-icons/fa';
 
 
 const Inscripcion = () => {
-    const inscripcion = useRef()
-
-    const handleClick = () =>{
-        if (inscripcion.current.style.display == "none") {
-            inscripcion.current.style.display = "block"
-        } else{
-            inscripcion.current.style.display = "none"
-        }
-    }
+   
     return (
         <div className='faq-container'>
-            <div className='square-faq-container' onClick={handleClick}>
-                <FaSquareFull className='square'/>
-                <span className='faq'>
-                    ¿Cómo me inscribo a los Cursos y Talleres?
-                </span>
-            </div>
-            <div className='answer-container' ref={inscripcion}>
+            <label  htmlFor='checkbox-i'>
+                <div className='square-faq-container' >
+                    <FaSquareFull className='square'/>
+                    <span className='faq'>
+                        ¿Cómo me inscribo a los Cursos y Talleres?
+                    </span>
+                </div>
+            </label>
+            <input id='checkbox-i' className='hiddenCheckbox' type="checkbox"></input>
+
+
+            <div className='answer-container'>
                 <p>
                 Primero deberás registrarte con un perfíl de usuario.
                 <br/>
