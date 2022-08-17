@@ -5,7 +5,7 @@ const Registro = () => {
     const registro = useRef()
 
     const handleClick = () =>{
-        if (registro.current.style.display == "none") {
+        if (registro.current.style.display === "none") {
             registro.current.style.display = "block"
         } else{
             registro.current.style.display = "none"

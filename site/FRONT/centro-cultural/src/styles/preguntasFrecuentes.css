@@ -24,6 +24,7 @@ span.faq{
     font-size: 20px;
     line-height: 100%;
     width: 95%;
+    cursor:pointer;
 }
 
 div.info-container{
@@ -71,4 +72,10 @@ div.redes{
 div.answer-container{
     display: none;
 
+}
+
+@media screen and (min-width: 1024px) {
+    section.preguntas-frecuentes {
+        padding:25px;
+    }
 }

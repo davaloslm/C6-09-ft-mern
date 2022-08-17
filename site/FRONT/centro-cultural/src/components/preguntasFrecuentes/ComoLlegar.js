@@ -4,14 +4,15 @@ import { FaSquareFull } from 'react-icons/fa';
 const ComoLlegar = () => {
     const display = useRef();
 
-    const handleClick = () =>{
-        if (display.current.style.display == "none") {
+    const handleClick = ((e) =>{
+        e.preventDefault();
+        if (display.current.style.display === "none") {
             display.current.style.display = "block"
         } else{
             display.current.style.display = "none"
         }
     }
-    
+    )
   
     return (
         <div className='faq-container'>

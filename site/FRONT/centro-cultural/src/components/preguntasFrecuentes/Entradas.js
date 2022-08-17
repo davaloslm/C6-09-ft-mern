@@ -5,7 +5,7 @@ const Entradas = () => {
     const entradas = useRef();
 
     const handleClick = () =>{
-        if (entradas.current.style.display == "none") {
+        if (entradas.current.style.display === "none") {
             entradas.current.style.display = "block"
         } else{
             entradas.current.style.display = "none"

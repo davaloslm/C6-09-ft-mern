@@ -4,8 +4,9 @@ import { FaSquareFull } from 'react-icons/fa';
 const Horarios = () => {
     const horarios = useRef()
 
-    const handleClick = () =>{
-        if (horarios.current.style.display == "none") {
+    const handleClick = (e) =>{
+        e.preventDefault();
+        if (horarios.current.style.display === "none") {
             horarios.current.style.display = "block"
         } else{
             horarios.current.style.display = "none"

@@ -6,7 +6,7 @@ const Inscripcion = () => {
     const inscripcion = useRef()
 
     const handleClick = () =>{
-        if (inscripcion.current.style.display == "none") {
+        if (inscripcion.current.style.display === "none") {
             inscripcion.current.style.display = "block"
         } else{
             inscripcion.current.style.display = "none"
