@@ -44,6 +44,7 @@ hr{
     padding:20px;
     justify-content: space-between;
     width:100%;
+    z-index:1000;
     background-color: white;
 }
 
@@ -105,7 +106,7 @@ hr{
 
 .nav__menu{
     position:absolute;
-    transform: translatex(-200%);
+    transform: translatey(-250%);
     transition: 0.5s ease;    
     width:100%;
 }
@@ -119,7 +120,7 @@ hr{
 }
 
 .nav__active {
-    transform: translateX(0%);
+    transform: translateY(0%);
     background-color: white;
     width:100%;
     padding-bottom:10px;
