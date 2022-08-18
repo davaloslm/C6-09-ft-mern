@@ -1,0 +1,44 @@
+.accordion ul {
+    display: none;
+    margin-bottom: 0; 
+    /* color: #9c9d9d; */
+}
+
+.accordion.open ul{
+    display: block;
+}
+
+.accordion.open .menu-desplegable .arrow-down{
+    transform: rotate(180deg);
+    bottom:5px;
+    position:relative;
+}
+
+.accordion {
+    cursor: pointer;
+}
+
+.menu-desplegable{
+    display:flex;
+    font-size:21px;
+}
+.ulMenuProgramacion li {
+    list-style:decimal;
+    color: var(--color-secondary);
+}
+
+@media screen and (min-width: 1024px){
+    .ulMenuProgramacion{
+        position:absolute;
+        background-color:white;
+        z-index:155;
+        margin:0;
+        padding:0;
+    }
+    .ulMenuProgramacion li{
+        list-style:none;
+        padding:5px;
+        /* margin-left:25px;  */
+        margin-right:25px; 
+    }
+}

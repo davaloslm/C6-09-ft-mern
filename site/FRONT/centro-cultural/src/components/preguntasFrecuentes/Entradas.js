@@ -1,26 +1,21 @@
-import React, { useRef } from 'react';
 import { FaSquareFull } from 'react-icons/fa';
 
 const Entradas = () => {
-    const entradas = useRef();
-
-    const handleClick = () =>{
-        if (entradas.current.style.display == "none") {
-            entradas.current.style.display = "block"
-        } else{
-            entradas.current.style.display = "none"
-        }
-    }
+    
     return (
         <div className='faq-container'>
-            <div className='square-faq-container' onClick={handleClick}>
-                <FaSquareFull className='square'/>
-                <span className='faq'>
-                    ¿Cómo puedo Comprar una Entrada?
-                </span>
-            </div>
+            <label  htmlFor='checkbox-e'>
+                <div className='square-faq-container'>
+                    <FaSquareFull className='square'/>
+                    <span className='faq'>
+                        ¿Cómo puedo Comprar una Entrada?
+                    </span>
+                </div>
+            </label>
+            <input id='checkbox-e' className='hiddenCheckbox' type="checkbox"></input>
 
-            <div className='answer-container' ref={entradas}>
+
+            <div className='answer-container'>
                 <p>
                 Primero deberás registrarte con un perfíl de usuario.
                 <br/>

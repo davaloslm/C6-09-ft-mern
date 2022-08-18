@@ -1,6 +1,4 @@
 import React from 'react';
-import NavBar from '../components/navBar/NavBar';
-import Footer from '../components/footer/Footer';
 import Horarios from "../components/preguntasFrecuentes/Horarios"
 import ComoLlegar from "../components/preguntasFrecuentes/ComoLlegar"
 import Contacto from "../components/preguntasFrecuentes/Contacto"
@@ -18,13 +16,22 @@ const PreguntasFrecuentes = () => {
             Preguntas Frecuentes
             </div>
 
-                <Horarios/>
-                <ComoLlegar/>
-                <Contacto/>
+            <div className='responsive-container'>
+                <div className='responsive-horarios'>
+                    <Horarios/>
+                </div>
+                <div className='responsive-comollegar'>
+                    <ComoLlegar/>
+                </div>
+                <div className='responsive-contacto'>
+                    <Contacto/>
+                </div>
+            </div>
+             
                 <Registro/>
                 <Inscripcion/>
                 <Entradas/>
-
+            
             </section>
         </>
     );

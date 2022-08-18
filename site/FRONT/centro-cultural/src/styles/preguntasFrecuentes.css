@@ -24,6 +24,7 @@ span.faq{
     font-size: 20px;
     line-height: 100%;
     width: 95%;
+    cursor:pointer;
 }
 
 div.info-container{
@@ -71,4 +72,57 @@ div.redes{
 div.answer-container{
     display: none;
 
+}
+
+.hiddenCheckbox{
+    display: none;
+}
+
+#checkbox-h:checked~div.answer-container{
+    display: block;
+}
+
+#checkbox-cl:checked~div.answer-container{
+    display: block;
+}
+
+#checkbox-c:checked~div.answer-container{
+    display: block;
+}
+#checkbox-r:checked~div.answer-container{
+    display: block;
+}
+#checkbox-i:checked~div.answer-container{
+    display: block;
+}
+#checkbox-e:checked~div.answer-container{
+    display: block;
+}
+
+
+@media (min-width: 1440px){
+
+    div.answer-container{
+        display: block;
+    }
+
+    div.responsive-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    } 
+    
+
+    div.responsive-horarios { 
+        grid-area: 1 / 1 / 2 / 2; 
+    }
+    div.responsive-comollegar {
+        grid-area: 1 / 2 / 3 / 3; 
+    }
+    div.responsive-contacto {
+        grid-area: 2 / 1 / 3 / 2; 
+    } 
+    
 }

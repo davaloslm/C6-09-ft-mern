@@ -1,16 +1,16 @@
-@import url('./../../styles/globals.css');
+@import url("./../../styles/globals.css");
 
 .formulario {
   display: flex;
   flex-direction: column;
-  background-color: #D9D9D9;
+  background-color: #d9d9d9;
   width: 328px;
   height: 350px;
   justify-content: center;
   align-items: center;
   padding-left: 15px;
   margin-left: 16px;
-  padding-top: 25px
+  padding-top: 25px;
 }
 
 .formulario-input {
@@ -18,10 +18,9 @@
   height: 33px;
 }
 
-.formulario form>input {
+.formulario form > input {
   margin-bottom: 20px;
 }
-
 
 .formulario-boton {
   width: 70px;
@@ -29,4 +28,49 @@
   color: var(--blanco);
   background-color: var(--color-main);
   margin-top: 10px;
+}
+
+
+@media screen and (min-width: 1024px){
+  .formulario {
+    width: 612px;
+    height: 480px;
+    justify-content: center;
+    align-items: center;
+    padding-left: 2%;
+    margin-left: 16px;
+    padding-top: 10px;
+  }
+  .formulario label {
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 25px;
+  }
+  .formulario input::placeholder {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  
+  .formulario-input {
+    width: 540px;
+    height: 40px;
+    background-color: var(--blanco);
+    margin-top: 2%;
+  }
+  
+  
+  .formulario form > input {
+    margin-bottom: 5%;
+  }
+  
+  .formulario-boton {
+    width: 130px;
+    height: 40px;
+    color: var(--blanco);
+    background-color: var(--color-main);
+    margin-top: 6%;
+    font-size: 25px;
+    line-height: 25px;
+  }
+  
 }
