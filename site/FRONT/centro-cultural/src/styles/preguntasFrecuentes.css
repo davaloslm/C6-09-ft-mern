@@ -24,6 +24,7 @@ span.faq{
     font-size: 20px;
     line-height: 100%;
     width: 95%;
+    cursor:pointer;
 }
 
 div.info-container{

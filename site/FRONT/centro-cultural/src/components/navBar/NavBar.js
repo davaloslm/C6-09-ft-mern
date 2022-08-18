@@ -27,7 +27,7 @@ const NavBar = () => {
             
           </li>
           <Link to="/cursosytalleres"><li>Cursos/Talleres</li></Link>
-          <li>Preguntas Frecuentes</li>
+          <Link to="/preguntas-frecuentes"><li>Preguntas Frecuentes</li></Link>
           <i><li><FaSistrix/></li></i>
           <i><li><FaUserCircle/></li></i>
         </ul>

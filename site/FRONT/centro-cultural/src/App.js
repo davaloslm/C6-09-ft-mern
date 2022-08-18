@@ -11,6 +11,7 @@ import ArtesEscenicasPage from './pages/Artes-Escenicas.js'
 import ArtesVisualesPage from './pages/Artes-Visuales.js'
 import Musica from './pages/Musica.js'
 import Cine from './pages/CinePage.js'
+import PreguntasFrecuentes from './../src/pages/PreguntasFrecuentes'
 
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
           <Route path="/artes-visuales" element ={<ArtesVisualesPage/>} />
           <Route path="/musica" element ={<Musica/>} />
           <Route path="/cine" element ={<Cine/>} />
+          <Route path="/preguntas-frecuentes" element ={<PreguntasFrecuentes/>} />
 
 
         </Routes>
