@@ -4,6 +4,9 @@
     padding:0;
     box-sizing: border-box;
 }
+.subHeader{
+    z-index:100;    
+}
 
 body{
     font-family: bebas-neue-pro, sans-serif;

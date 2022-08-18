@@ -32,6 +32,7 @@ header img{
     align-items:center;
     padding-left:10px;
     padding-right:15px;
+    transition: transform 0.8s ease 0s;
 }
 
 .subHeader .title{
@@ -48,3 +49,6 @@ header img{
     font-size:20px;
 
 }
+
+
+/************************************************/

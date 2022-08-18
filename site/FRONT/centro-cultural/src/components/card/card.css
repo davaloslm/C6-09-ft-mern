@@ -1,8 +1,3 @@
-* 
-::before,
-::after{/*incluíran cualquier borde o relleno que se añadan, y la caja de contenido se encogerá para absorber ese ancho extra.*/
-    box-sizing: border-box;
-}
 
 *{ /* reseteo CSS*/
     margin: 0;
@@ -46,14 +41,8 @@
 
 
 .titleCard{
-    width: 308px;
-    height: 32px;
-    left: 26px;
-    top: 474px;  
     font-family: 'Antonio';
     font-weight: 700;
-    font-size: 25px;
-    line-height: 32px;
     color: #FAFAF9;
 }
 
@@ -64,8 +53,6 @@
     top: 533px;
     margin-top: 9px;
     margin-bottom: 5px;
-    /* MOB - Antonio Light 14 */
-
     font-family: 'Antonio';
     font-style: normal;
     font-weight: 300;

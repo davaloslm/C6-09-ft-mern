@@ -9,7 +9,7 @@ const GridCard = () => {
 
   return (
     <>
-        <h2 className='title'>Programacion</h2>
+        <h2 className='subtitle'>Programacion</h2>
 
         <div className='gridProgracion'>
             <div className='cardGridUno'>
