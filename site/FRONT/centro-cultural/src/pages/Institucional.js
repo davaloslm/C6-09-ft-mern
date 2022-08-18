@@ -2,28 +2,35 @@ import React from "react";
 import "./../styles/globals.css";
 import "./../styles/institucional.css";
 import "./../styles/navBar.css";
-import imgInstitucional from "./../assets/institucional.svg";
+import Mapa from "./../components/home/Mapa"
+import imgInstitucional from "./../assets/institucional.jpg";
 
 const Institucional = () => {
 	return (
 		<section id="institucional">
 			<p className="title-cs">Institucional</p>
-			<img src={imgInstitucional} alt="centro-cultural-sanMartin" />
-			<h3>Misiones y Funciones</h3>
-			<p>
-				En sus más de 50 años de historia, El Cultural San Martín se erige como
-				una institución innovadora, amplia, diversa e inclusiva. De fuerte
-				mística pluralista y multicultural, cuenta con el apoyo del Ministerio
-				de Cultura en todas sus actividades, para llegar a contenidos de
-				excelencia.
-			</p>
-			<br />
-			<p>
+			<div className="container-institucional">
+				<img src={imgInstitucional} alt="centro-cultural-sanMartin" />
+				<div className="container-institucional-text">
+				<h3>Misiones y Funciones</h3>
+				<p>
+					En sus más de 50 años de historia, El Cultural San Martín se erige como
+					una institución innovadora, amplia, diversa e inclusiva. De fuerte
+					mística pluralista y multicultural, cuenta con el apoyo del Ministerio
+					de Cultura en todas sus actividades, para llegar a contenidos de
+					excelencia.
+				</p>
+				<br />	
+				<p>
 				Este es un espacio donde florecen las más heterogéneas experiencias en
 				teatro, danza, música, cine, literatura y cultura digital. También, El
 				Cultural San Martín fue el sitio donde funcionó el centro de cómputos en
 				la vuelta a la democracia y fue la casa de la Conadep.
 			</p>
+				</div>
+			</div>
+			
+			
 			<h3>Responsibilades Primarias</h3>
 			<ul>
 				<li>
@@ -69,6 +76,7 @@ const Institucional = () => {
 					tecnología y los debates contemporáneos.
 				</li>
 			</ul>
+			<Mapa />
 		</section>
 	);
 };

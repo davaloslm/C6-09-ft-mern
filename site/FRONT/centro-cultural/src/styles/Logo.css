@@ -1,0 +1,10 @@
+.logo-container{
+    display:flex;
+}
+.title-header{
+    margin-left:15px;
+    font-size:14px;
+}
+.logoHeader {
+    object-fit: contain;
+}

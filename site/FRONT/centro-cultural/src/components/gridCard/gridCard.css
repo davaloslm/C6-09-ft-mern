@@ -31,6 +31,13 @@
     color: #393842;
 }
 
+.cardGridUno,
+.cardGridDos {
+    display: flex;
+    flex-direction: column;
+    width: 160px;
+}
+
 .cardGridUno h3{
     padding-left: 1rem;
     width: 160px;
@@ -47,7 +54,6 @@
     display: flex;
     align-items: center;
 }
-
 
 .cardGridDos h3{
     padding-left: 1rem;

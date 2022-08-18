@@ -1,0 +1,25 @@
+.container-sinopsis {
+  display: flex;
+  flex-direction: column;
+  width: 328px;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  margin-top: 4%;
+  margin-left: 4%;
+  text-align: left;
+}
+
+.container-sinopsis h2 {
+  font-size: 20px;
+  line-height: 100%;
+  width: 327px;
+  height: 28px;
+  margin-left: 8%;
+  margin-bottom: -3%;
+}
+.container-sinopsis p {
+  font-size: 18px;
+  line-height: 19.8px;
+  margin-top: 7%;
+}

@@ -7,9 +7,10 @@ import {cine} from './data.js'
 const Cine = () => {
   return (
     <>
+    <div className="container-test">
         <div className="group">
             <p>Cine Latinoamericano: Una Introducción</p>
-            <p className="subtitle">Cine y Televisión</p>
+            <p id="subtitle">Cine y Televisión</p>
         </div>
         <p>“Latinoamérica en un concepto, es la historia de las luchas de los pueblos arrasados en la región. Las políticas económicas impuestas foráneamente con articulaciones locales en cada país necesitan para ser llevadas a cabo, el componente represivo exterminando a algunos, erradicando a otros y alienando a los que quedan.”</p>
         <DataCursos>
@@ -22,6 +23,7 @@ const Cine = () => {
             </div>
             ))}
         </DataCursos>
+        </div>
     </>
   )
 }

@@ -7,9 +7,10 @@ import {escritura} from './data.js'
 const Escritura = () => {
   return (
     <>
+    <div className="container-test">
     <div className="group">
             <p>Escritura Creativa</p>
-            <p className="subtitle">Letras</p>
+            <p id="subtitle">Letras</p>
     </div>
     <p>No es lo mismo decir: “el viento movía las hojas de los árboles”, que decir: “las hojas bailaban al ritmo que el viento les proponía”. Esta diferencia está marcada por la escritura creativa y vos también podés lograrla ¿Cómo?: inscribiéndote en este taller.</p>
     <DataCursos>
@@ -23,6 +24,7 @@ const Escritura = () => {
         )
         )}
     </DataCursos>
+    </div>
     </>
   )
 }
