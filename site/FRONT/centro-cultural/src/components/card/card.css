@@ -39,7 +39,6 @@
     height: 84px;
 }
 
-
 .titleCard{
     font-family: 'Antonio';
     font-weight: 700;
@@ -58,10 +57,12 @@
     font-weight: 300;
     font-size: 14px;
     line-height: 18px;
-
-    /* Blanco 1 */
-
     color: #FAFAF9;
+}
+
+.infoCardDos,
+.infoCardTres{
+    display: none;
 }
 
 .subTitleCard{
@@ -74,4 +75,104 @@
     font-size: 14px;
     line-height: 18px;
     color: #FAFAF9;
+}
+.divBrandsCard img{
+    display: none;
+}
+
+@media screen and (min-width: 1440px){
+
+    .card{
+        width: 1240px;
+        height: 440px;
+        display: flex;
+        margin: 48px 100px 80px;
+        position: relative;
+    }
+
+    .divImgCard {
+        width: 507px;
+        height: 440px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url(../../assets/atomo-escritorio.png);
+        position:static ;
+    
+    }
+
+    .divInfoCard {
+        background: #323786;
+        height: 440px;
+        width: 733px;
+        padding: 40px;
+    }
+
+
+    .infoImgCard{
+        position:absolute;
+        width: 653px;
+        height: 32px;
+        top: 40px;
+        right: 40px;
+        font-family: 'Antonio';
+        font-style: normal;
+        font-weight: 100;
+        font-size: 22px;
+        line-height: 28px;
+    }
+
+    .titleCard{
+        font-family: 'Antonio';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 65px;
+        margin-top: 56px;
+    }
+
+    .subTitleCard{
+        font-family: 'Antonio';
+        font-style: normal;
+        font-weight: 100;
+        font-size: 30px;
+        line-height: 39px;
+    }
+    
+    .divInfoCard div{
+        font-family: 'Antonio';
+        font-style: normal;
+        font-weight: 100;
+        font-size: 25px;
+        line-height: 32px;
+        margin-top: 40px;
+        font-size: 30px;
+        line-height: 39px;
+    }
+
+    .infoCardDos,
+    .infoCardTres{
+        display: block;
+    }
+    .divInfoCard h4{
+        font-family: 'Antonio';
+        font-style: normal;
+        font-weight: 100;
+        font-size: 25px;
+        line-height: 39px;
+        width: 650px;
+        margin:0;
+        height: auto;
+        font-family: 'Antonio';
+        font-style: normal;
+        font-weight: 100;
+        font-size: 25px;
+        line-height: 32px;
+    }
+    .divBrandsCard {
+        display: flex;
+        gap:28px
+    }
+    .divBrandsCard img{
+        display: block;
+    }
 }

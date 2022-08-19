@@ -76,5 +76,48 @@
     display: flex;
     align-items: center;
 }
+
+
     
+@media screen and (min-width: 1440px){
+    .gridProgracion{
+        display:flex;
+        gap:1rem;
+        margin:40px 100px 80px;
+        width: 1240px;
+        height: 280px;
+    }
+
+    .gridProgracion div{
+        width: 298px;
+        height: 280px ;
+    }
     
+    .gridProgracion h3{
+        width: 298px;
+        height: 80px;
+        left: 100px;
+        top: 1072px;
+        font-family: 'Antonio';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 100%;
+        /* or 30px */
+
+        display: flex;
+        align-items: center;
+    }
+    .subtitle{
+        margin-left: 100px;
+        height: 40px;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 100%;
+        display: flex;
+        align-items: center;
+        color: #393842;
+    }
+
+
+}
