@@ -4,9 +4,14 @@
     padding: 0;
     box-sizing: border-box;
 }
+.cardContainer{
+    display: flex;
+   justify-content:center ;
+}
 
 .card{
-
+    height: 309px;
+    width: 328px;
     margin: 1rem;
     color: white;
 }
