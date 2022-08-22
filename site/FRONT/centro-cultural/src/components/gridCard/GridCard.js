@@ -9,7 +9,7 @@ const GridCard = () => {
 
   return (
     <>
-        <h2 className='title'>Programacion</h2>
+        <h2 className='subtitle'>Programacion</h2>
 
         <div className='gridProgracion'>
             <div className='cardGridUno'>
@@ -25,15 +25,15 @@ const GridCard = () => {
             </div>
 
             <div className='cardGridUno'>
-                <img src={imgMusica} alt=''/>
-
-                <h3>Música</h3>                
-            </div>
-
-            <div className='cardGridDos'>
                 <img src={imgCine} alt=''/>
 
                 <h3>Cine</h3>                
+            </div>
+
+            <div className='cardGridDos'>
+                <img src={imgMusica} alt=''/>
+
+                <h3>Música</h3>                
             </div>
         </div>
 

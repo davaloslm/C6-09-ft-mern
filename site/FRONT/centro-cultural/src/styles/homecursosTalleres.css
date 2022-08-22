@@ -1,0 +1,12 @@
+#Cursostalleres {
+    margin: 10px;
+} 
+
+.title {
+    padding-top: 15px;
+    
+}
+
+ #homecursosytalleres{
+    background-color: var(--color-secondary)
+}
