@@ -22,32 +22,149 @@ header img{
     display:flex;
     align-items:center;
 }
-.subHeader{
-    display:flex;
-    position:sticky;
-    overflow:auto;
-    /* align-self:flex-start; */
-    top:0;
-    background-color:var(--blanco);
-    margin-top:15px;
-    align-items:center;
-    padding-left:10px;
-    padding-right:15px;
-    transition: transform 0.8s ease 0s;
+
+/* TERMINA EL NAVBARSOCIALS */
+hr{
+    margin-left:15px;
+    margin-right:15px;
+    opacity:0.4;
 }
-
-
-.subHeader .title{
-    text-transform:uppercase;
-    display:block;
-    width:100%;
-    margin-left:10px;
+.a-header{
     color: var(--font-primary);
 }
-.subHeader i{
-    display:flex;
-    justify-content: flex-end;
+.nav{
+    position:sticky;
+    z-index:11111;
     width:100%;
-    font-size:20px;
+}
 
+.navHeader{
+    display: flex;
+    align-items: center;
+    padding:20px;
+    justify-content: space-between;
+    width:100%;
+    z-index:1000;
+    background-color: white;
+}
+
+/* Toggle Icon Animation */
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-4px, 2px);
+    z-index: 3;
+    background:  var(--font-primary);
+}
+
+.toggle .line2 {
+    background: var(--font-primary);
+    opacity: 0;
+    z-index: 3;
+}
+
+.toggle .line3 {
+    background:  var(--font-primary);
+    z-index: 3;
+    transform: rotate(45deg) translate(-6px, -5px);   
+}
+  
+
+
+.divPerfilMenu{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color:white;
+}
+
+.divPerfilMenu img{
+    margin-left: 26px;
+
+}
+
+.divPerfilMenu h4{
+    margin-left:25px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    text-align: center;
+    color: var(--font-primary);
+    opacity: 0.7;
+}
+.menu-desktop{
+    display:none;
+}
+.menuOpen li{
+    background-color:white; 
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    list-style:none;
+    margin-left: 26px;
+    color: #393842;
+    padding-bottom:5px;
+}
+
+.nav__menu{
+    position:absolute;
+    transform: translatey(-250%);
+    transition: 0.5s ease;    
+    width:100%;
+}
+
+
+.divBuscarMenu input{
+    font-style: normal;
+    background-color:white;
+    border: none;
+    margin-left:15px;
+}
+
+.nav__active {
+    transform: translateY(0%);
+    background-color: white;
+    width:100%;
+    padding-bottom:10px;
+}
+
+.nav__toggler{
+    display: flex;
+    flex-direction: column;
+    gap: 3.5px;
+}
+
+.nav__toggler div {
+    width: 22.5px;
+    height: 2.5px;
+    background:  var(--font-primary);
+    transition: 0.3s ease-in;
+}
+
+@media screen and (min-width: 1024px){
+    
+    .nav__toggler{
+        display:none;
+    }
+     .divPerfilMenu {
+        display:none;
+    }
+     hr{
+        display:none;
+    }
+    .divBuscarMenu input{
+        display:none;
+    }
+     .menu-desktop{
+        display:flex;
+        align-items:center;
+        justify-content:space-around;
+        width:75%;
+    }
+    .menu-desktop li{
+        list-style:none;
+        font-weight:600;
+        font-size:18px;
+        /* margin-left:15px;    */
+
+    }
+    
 }
