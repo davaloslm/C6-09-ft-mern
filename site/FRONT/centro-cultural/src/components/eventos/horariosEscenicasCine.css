@@ -1,0 +1,15 @@
+div.horarios-escenicas-cine-container{
+    margin: 1rem
+}
+
+div.horarios-escenicas-cine-container span{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 100%;
+}
+
+div.horarios-escenicas-cine-container p{
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 110%;
+}
