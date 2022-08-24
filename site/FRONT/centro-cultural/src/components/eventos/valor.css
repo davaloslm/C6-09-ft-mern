@@ -1,0 +1,15 @@
+.price-container{
+    margin: 1rem;
+}
+
+.price-container span{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 100%;
+}
+
+.price-container p{
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 110%;
+}

@@ -4,9 +4,14 @@
     padding: 0;
     box-sizing: border-box;
 }
+.cardContainer{
+    display: flex;
+   justify-content:center ;
+}
 
 .card{
-
+    height: 309px;
+    width: 328px;
     margin: 1rem;
     color: white;
 }
@@ -16,7 +21,22 @@
     width: 100%;
     position: relative;
     text-align: center;
+}
+
+.imgSliderUno{
     background-image: url("../../assets/img/eternidades.png");
+}
+
+.imgSliderDos{
+    background-image: url("../../assets/visuales1.jpg");
+}
+
+.imgSliderTres{
+    background-image: url("../../assets/musica1.jpg");
+}
+
+.imgSliderCuatro{
+    background-image: url("../../assets/cine1.jpg");
 }
 
 .infoImgCard{
@@ -37,8 +57,15 @@
     background: #323786;
     padding: 0 10px;
     height: 84px;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start;
 }
-
+.divInfoCardDos{
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start;
+}
 
 .titleCard{
     font-family: 'Antonio';
@@ -47,7 +74,7 @@
 }
 
 .infoCard{
-    width: 308px;
+    text-align: initial;
     height: 18px;
     left: 26px;
     top: 533px;
@@ -58,14 +85,15 @@
     font-weight: 300;
     font-size: 14px;
     line-height: 18px;
-
-    /* Blanco 1 */
-
     color: #FAFAF9;
 }
 
+.infoCardDos,
+.infoCardTres{
+    display: none;
+}
+
 .subTitleCard{
-    width: 308px;
     height: 18px;
     left: 26px;
     top: 506px;
@@ -74,4 +102,119 @@
     font-size: 14px;
     line-height: 18px;
     color: #FAFAF9;
+}
+.divBrandsCard img{
+    display: none !important;
+}
+
+
+@media screen and (min-width: 1440px){
+
+    .card{
+        width: 1240px;
+        height: 440px;
+        display: flex;
+        margin: 48px 100px 80px;
+        position: relative;
+    }
+
+    .divImgCard {
+        width: 507px;
+        height: 440px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position:static 
+    }
+
+    .imgSliderUno,
+    .imgSliderDos,
+    .imgSliderTres,
+    .imgSliderCuatro{
+        background-position: center;
+    }
+    
+    .divInfoCard {
+        background: #323786;
+        height: 440px;
+        width: 733px;
+        padding: 40px;
+        position: relative;
+    }
+
+    .infoImgCard{
+        position:absolute;
+        width: 653px;
+        height: 32px;
+        top: 40px;
+        right: 40px;
+        font-family: 'Antonio';
+        font-style: normal;
+        font-weight: 100;
+        font-size: 22px;
+        line-height: 28px;
+        z-index: 100;
+    }
+
+    .titleCard{
+        font-family: 'Antonio';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 65px;
+        margin-top: 56px;
+    }
+
+    .subTitleCard{
+        font-family: 'Antonio';
+        font-style: normal;
+        font-weight: 100;
+        font-size: 30px;
+        line-height: 39px;
+    }
+    
+    .divInfoCardDos {
+        font-family: 'Antonio';
+        font-style: normal;
+        font-weight: 100;
+        font-size: 25px;
+        line-height: 32px;
+        margin-top: 41px;
+    }
+
+    .divInfoCardDos h4{
+        font-family: 'Antonio';
+        font-style: normal;
+        height: auto;
+        font-weight: 100;
+        font-size: 25px;
+        line-height: 32px;
+    }
+
+    .infoCardDos,
+    .infoCardTres{
+        display: block;
+    }
+
+    .divBrandsCard {
+        display: flex;
+        gap:28px;
+        position: absolute;
+        bottom: 42px;
+    }
+
+    .divBrandsCard img{
+        display: block !important;
+    }
+
+    .cardInfo2{
+        margin-top: 100px;
+    }
+
+    .cardInfo3,
+    .cardInfo4{
+        margin-top: 130px;
+    }
+    .imgSliderCuatro{
+        background-image: url("../../assets/cineFantasma.png");
+    }
 }

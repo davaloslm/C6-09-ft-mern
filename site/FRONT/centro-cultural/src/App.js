@@ -12,6 +12,8 @@ import ArtesVisualesPage from './pages/Artes-Visuales.js'
 import Musica from './pages/Musica.js'
 import Cine from './pages/CinePage.js'
 import PreguntasFrecuentes from './../src/pages/PreguntasFrecuentes'
+import Footer from './components/footer/Footer'
+
 
 
 function App() {
@@ -39,7 +41,8 @@ function App() {
 
         </Routes>
 
-        <NavBarSocials/>
+        {/* <NavBarSocials/> */}
+        <Footer />
       
       </BrowserRouter>
 

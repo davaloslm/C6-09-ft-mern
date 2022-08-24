@@ -1,0 +1,39 @@
+@import url(./../../styles/globals.css);
+.container-socials-footer .logo-container {
+    display:none;
+}
+@media screen and (min-width: 1024px){
+    .container-socials-footer{
+        background-color: var(--color-main);
+        display:flex;
+        justify-content:space-between;
+    }
+    .container-socials-footer .logo-container{
+        display:flex;
+        height:45px;
+        margin-left:50px;
+        margin-top:10px;
+        margin-bottom:10px;
+    }
+    .container-socials-footer .logo-container h1{
+        font-size:14px;
+        color:white;
+        position:relative;
+        font-weight:400;
+        bottom:3px;
+        /* line-height: 15px; */
+    }
+    .container-socials-footer .logo-ba{
+        height:35px;
+        position:relative;
+        top:10px;
+        margin-left:45px;
+        margin-right:85px;
+    }
+    .container-tools-footer{
+        display:flex;
+        padding-bottom:15px;
+        padding-right:35px;
+        justify-content:center;
+    }
+}

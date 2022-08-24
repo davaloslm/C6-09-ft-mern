@@ -8,36 +8,38 @@ import imgCine from "../../assets/img/cine.png"
 const GridCard = () => {
 
   return (
-    <>
-        <h2 className='subtitle'>Programacion</h2>
+    <div className='gridProgramacionContainerBig'>
+        <div className='gridProgramacionContainer'>    
+            <h2 className='subtitle'>Programacion</h2>
 
-        <div className='gridProgracion'>
-            <div className='cardGridUno'>
-                <img src={imgArtesEscenicas} alt=''/>
+            <div className='gridProgracion'>
+                <div className='cardGridUno'>
+                    <img src={imgArtesEscenicas} alt=''/>
 
-                <h3>Artes Escenicas</h3>                
-            </div>
+                    <h3>Artes Escenicas</h3>                
+                </div>
 
-            <div className='cardGridDos'>
-                <img src={imgArtesVisuales} alt=''/>
+                <div className='cardGridDos'>
+                    <img src={imgArtesVisuales} alt=''/>
 
-                <h3>Artes Visuales</h3>    
-            </div>
+                    <h3>Artes Visuales</h3>    
+                </div>
 
-            <div className='cardGridUno'>
-                <img src={imgMusica} alt=''/>
+                <div className='cardGridUno'>
+                    <img src={imgCine} alt=''/>
 
-                <h3>Música</h3>                
-            </div>
+                    <h3>Cine</h3>                
+                </div>
 
-            <div className='cardGridDos'>
-                <img src={imgCine} alt=''/>
+                <div className='cardGridDos'>
+                    <img src={imgMusica} alt=''/>
 
-                <h3>Cine</h3>                
+                    <h3>Música</h3>                
+                </div>
             </div>
         </div>
 
-    </>
+    </div>
   )
 }
 

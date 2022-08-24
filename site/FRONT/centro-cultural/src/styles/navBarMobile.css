@@ -18,14 +18,25 @@
     cursor: pointer;
 }
 
+.menuOpen{
+    bottom:15px;
+    position:relative;
+}
+
 .menu-desplegable{
     display:flex;
     font-size:21px;
 }
-.ulMenuProgramacion li {
-    list-style:decimal;
-    color: var(--color-secondary);
+.ulMenuProgramacion  {
+    position:relative;
+    transition:0.5s;
 }
+
+/* .ulMenuProgramacion li:hover{
+    background-color:var(--color-main);
+    color:white;
+    transition:0.5s;
+} */
 
 @media screen and (min-width: 1024px){
     .ulMenuProgramacion{
@@ -33,12 +44,34 @@
         background-color:white;
         z-index:155;
         margin:0;
-        padding:0;
+        /* padding:; */
+        /* padding-bottom:15px; */
+        top:95px;
+        /* padding-left:10px; */
+    }
+    .puntosubmenu{
+        width:5px;
+        height:5px;
+        background-color: var(--color-secondary);
+        position:absolute;
+        top:14px;
+        left:2px;
+    }
+    .menu-desplegable{
+        top: 3.4px;
+        position:relative;
     }
     .ulMenuProgramacion li{
         list-style:none;
         padding:5px;
-        /* margin-left:25px;  */
-        margin-right:25px; 
+        color:black;
+        padding-left:10px;
+        position:relative;
+        right:5px;
+    }
+    .ulMenuProgramacion li:hover{
+        background-color:transparent;
+        color: var(--color-secondary);
+        
     }
 }
