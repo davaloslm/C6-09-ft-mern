@@ -19,7 +19,9 @@ const Formulario = () => {
     }
   };
   return (
-    <>
+    <section id="Formulario">
+      <h1>Estemos en contacto</h1> <br/>
+      <p>Dejanos tu correo electrónico  para enterarte de la programación del Centro Cultural San Martín.</p> <br/>
       <div className="formulario">
         <form onSubmit={enviarFormulario}>
           <label htmlFor="email">Correo Electrónico</label>
@@ -111,7 +113,7 @@ const Formulario = () => {
           </Modal>
         )}
       </div>
-    </>
+    </section>
   );
 };
 

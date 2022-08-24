@@ -76,7 +76,7 @@ const Institucional = () => {
 					tecnología y los debates contemporáneos.
 				</li>
 			</ul>
-			<Mapa />
+			
 		</section>
 	);
 };
