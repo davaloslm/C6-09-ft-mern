@@ -21,7 +21,22 @@
     width: 100%;
     position: relative;
     text-align: center;
+}
+
+.imgSliderUno{
     background-image: url("../../assets/img/eternidades.png");
+}
+
+.imgSliderDos{
+    background-image: url("../../assets/visuales1.jpg");
+}
+
+.imgSliderTres{
+    background-image: url("../../assets/musica1.jpg");
+}
+
+.imgSliderCuatro{
+    background-image: url("../../assets/cine1.jpg");
 }
 
 .infoImgCard{
@@ -42,6 +57,14 @@
     background: #323786;
     padding: 0 10px;
     height: 84px;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start;
+}
+.divInfoCardDos{
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start;
 }
 
 .titleCard{
@@ -51,7 +74,7 @@
 }
 
 .infoCard{
-    width: 308px;
+    text-align: initial;
     height: 18px;
     left: 26px;
     top: 533px;
@@ -71,7 +94,6 @@
 }
 
 .subTitleCard{
-    width: 308px;
     height: 18px;
     left: 26px;
     top: 506px;
@@ -82,8 +104,9 @@
     color: #FAFAF9;
 }
 .divBrandsCard img{
-    display: none;
+    display: none !important;
 }
+
 
 @media screen and (min-width: 1440px){
 
@@ -100,18 +123,23 @@
         height: 440px;
         background-repeat: no-repeat;
         background-size: cover;
-        background-image: url(../../assets/atomo-escritorio.png);
-        position:static ;
-    
+        position:static 
     }
 
+    .imgSliderUno,
+    .imgSliderDos,
+    .imgSliderTres,
+    .imgSliderCuatro{
+        background-position: center;
+    }
+    
     .divInfoCard {
         background: #323786;
         height: 440px;
         width: 733px;
         padding: 40px;
+        position: relative;
     }
-
 
     .infoImgCard{
         position:absolute;
@@ -124,6 +152,7 @@
         font-weight: 100;
         font-size: 22px;
         line-height: 28px;
+        z-index: 100;
     }
 
     .titleCard{
@@ -143,41 +172,49 @@
         line-height: 39px;
     }
     
-    .divInfoCard div{
+    .divInfoCardDos {
         font-family: 'Antonio';
         font-style: normal;
         font-weight: 100;
         font-size: 25px;
         line-height: 32px;
-        margin-top: 40px;
-        font-size: 30px;
-        line-height: 39px;
+        margin-top: 41px;
+    }
+
+    .divInfoCardDos h4{
+        font-family: 'Antonio';
+        font-style: normal;
+        height: auto;
+        font-weight: 100;
+        font-size: 25px;
+        line-height: 32px;
     }
 
     .infoCardDos,
     .infoCardTres{
         display: block;
     }
-    .divInfoCard h4{
-        font-family: 'Antonio';
-        font-style: normal;
-        font-weight: 100;
-        font-size: 25px;
-        line-height: 39px;
-        width: 650px;
-        margin:0;
-        height: auto;
-        font-family: 'Antonio';
-        font-style: normal;
-        font-weight: 100;
-        font-size: 25px;
-        line-height: 32px;
-    }
+
     .divBrandsCard {
         display: flex;
-        gap:28px
+        gap:28px;
+        position: absolute;
+        bottom: 42px;
     }
+
     .divBrandsCard img{
-        display: block;
+        display: block !important;
+    }
+
+    .cardInfo2{
+        margin-top: 100px;
+    }
+
+    .cardInfo3,
+    .cardInfo4{
+        margin-top: 130px;
+    }
+    .imgSliderCuatro{
+        background-image: url("../../assets/cineFantasma.png");
     }
 }

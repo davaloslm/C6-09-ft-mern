@@ -14,6 +14,7 @@ import Cine from './pages/CinePage.js'
 import PreguntasFrecuentes from './../src/pages/PreguntasFrecuentes'
 
 
+
 function App() {
   return (
     <div className="App">
