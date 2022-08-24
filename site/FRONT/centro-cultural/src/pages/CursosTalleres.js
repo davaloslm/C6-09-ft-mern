@@ -25,7 +25,6 @@ const CursosTalleres = () => {
       
       </div>
       <br/> <br/>
-      <Mapa />
     </section>
   )
 }

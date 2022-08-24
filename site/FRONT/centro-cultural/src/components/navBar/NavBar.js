@@ -35,14 +35,12 @@ const NavBar = () => {
         <div className='navHeader'>
           <Link to="/" className="a-header"><Logo /></Link>
           <div className ="menu-desktop">
-          <li>Institucional   </li> 
+          <Link to="/institucional" className="links-nav"><li>Institucional</li></Link>
                   <li><MenuProgramacion/> </li>
-                  
-                  <li>Cursos y talleres  </li>
-                  
-                  <li>Preguntas Frecuentes  </li>
-                  <li><FaSistrix/></li>
-                  <li><FaUserCircle/> </li>
+                  <Link to="/cursosytalleres" className="links-nav"><li>Cursos y talleres</li></Link>
+                  <Link to="/preguntas-frecuentes" className="links-nav"><li>Preguntas Frecuentes</li></Link>
+                  <li className="icon-nav"> <i className="icon-nav"> <FaSistrix/></i></li>
+                  <Link to="/perfil" className="links-nav"><li className="icon-nav"><i className="icon-nav"><FaUserCircle/></i></li></Link>
                   
           </div>
 
@@ -55,18 +53,18 @@ const NavBar = () => {
 
         <div className='menuOpen'>
             <ul className={active}>
-                <div className='divPerfilMenu'>
+                <Link to="/perfil" className="links-nav"><div className='divPerfilMenu'>
                 <img src={perfil} alt='photoUser'/>
                     <h4>Ingresá a tu perfil</h4>
-                </div>
+                </div></Link>
                 
-                  <li>Institucional   </li>
+                <Link to="/institucional" className="links-nav"><li>Institucional</li></Link>
                   <hr/>
                   <li><MenuProgramacion/> </li>
                   <hr/>
-                  <li>Cursos y talleres  </li>
+                  <Link to="/cursosytalleres" className="links-nav"><li>Cursos y talleres</li></Link>
                   <hr/>
-                  <li>Preguntas Frecuentes  </li>
+                  <Link to="/preguntas-frecuentes" className="links-nav"><li>Preguntas Frecuentes</li></Link>
                   <hr/>
                 
                 
@@ -74,7 +72,7 @@ const NavBar = () => {
                 <div className='divBuscarMenu'>
                     <input placeholder='Buscar...' />
                     {/* <button> */}
-
+                      <FaSistrix className="icon-header-mobile"/>
                     {/* <img src={lupa} alt="buscar"/> */}
                     {/* </button> */}
                 </div>

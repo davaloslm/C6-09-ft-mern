@@ -10,7 +10,11 @@ body{
     color: var(--font-primary);
 }
 
-
+.nav{
+    position:sticky;
+    z-index:10000;
+    top:0;
+}
 a{
     color:white;
     text-decoration:none;
@@ -23,7 +27,9 @@ iframe {
 section {
     padding:12px;
 }
-
+.links-nav{
+    color:inherit;
+}
 :root{
     --color-main: #323786;
     --color-secondary:#D55F60;
@@ -37,10 +43,14 @@ section {
     section{
         padding:25px;
     }
-
+    iframe{
+        width:500px;
+        height:480px;
+    }
     #mapa{
         display:block;
         margin:0 auto;
         width: 400px;
+        
     }
 }
