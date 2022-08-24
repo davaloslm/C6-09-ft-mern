@@ -1,13 +1,15 @@
 import React from 'react'
 import '../styles/homecursosTalleres.css'
-import Card from '../components/card/Card'
+import "swiper/css/bundle";
 import GridCard from '../components/gridCard/GridCard'
+import SliderHome from '../components/slider/SliderHome'
 
 const Home = () => {
   return (
     <>
-    <Card/>
+    <SliderHome/>
     <GridCard/>
+    
     <section id="Cursostalleres">
 
     <h2 className="title">Cursos y Talleres</h2><br />
