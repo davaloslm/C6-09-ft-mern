@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React from "react";
 import '../card/card.css'
 
 import './sliderHome.css'
