@@ -8,8 +8,10 @@ const env = require('dotenv');
 env.config();
 const mongoose = require('mongoose');
 
+//routes
 const indexRouter = require('./routes/index');
-const usersRouter = require('./routes/users');
+const eventoRoutes = require('./routes/evento');
+const categoriaRoutes = require('./routes/categoria');
 
 //conection to database
 mongoose.connect(process.env.MONGODB_URI)
@@ -26,16 +28,20 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 
 
-//middlewares
+//middleware
 app.use(cors())
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
+app.use('/public', express.static(`${__dirname}/storage/imagenes`))
+//app.use(express.static(path.join(__dirname, 'public')));
+
 
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
+app.use('/api', eventoRoutes);
+app.use('/api', categoriaRoutes);
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
