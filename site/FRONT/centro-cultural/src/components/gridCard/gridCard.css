@@ -1,13 +1,12 @@
-* 
-::before,
-::after{/*incluíran cualquier borde o relleno que se añadan, y la caja de contenido se encogerá para absorber ese ancho extra.*/
-    box-sizing: border-box;
-}
-
 *{ /* reseteo CSS*/
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+.gridProgramacionContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .gridProgracion {
@@ -17,8 +16,15 @@
     grid-column-gap: 8px;
     grid-row-gap: 8px;
     margin:1rem;
+    height: 304px;
+    width: 328px;
 }
-.title{
+
+.gridProgracion img {
+    z-index:-1;
+}
+
+.subtitle{
     margin: 0 1rem;
     width: 328px;
     height: 28px;
@@ -34,12 +40,14 @@
     color: #393842;
 }
 
+
 .cardGridUno,
 .cardGridDos {
     display: flex;
     flex-direction: column;
     width: 160px;
 }
+
 
 .cardGridUno h3{
     padding-left: 1rem;
@@ -58,6 +66,7 @@
     align-items: center;
 }
 
+
 .cardGridDos h3{
     padding-left: 1rem;
     color:white;
@@ -74,5 +83,54 @@
     display: flex;
     align-items: center;
 }
+
+
     
+@media screen and (min-width: 1440px){
+    .gridProgracion{
+        display:flex;
+        gap:1rem;
+
+        width: 1240px;
+        height: 280px;
+    }
+
+    .gridProgracion div{
+        width: 298px;
+        height: 280px ;
+    }
     
+    .gridProgracion h3{
+        width: 298px;
+        height: 80px;
+        left: 100px;
+        top: 1072px;
+        font-family: 'Antonio';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 100%;
+        /* or 30px */
+
+        display: flex;
+        align-items: center;
+    }
+    .subtitle{
+        height: 40px;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 100%;
+        text-align: start;
+        width: 100%;
+        margin-bottom: 24px;
+
+    }
+
+    .gridProgramacionContainer{
+        height:360px; 
+        width: 1240px;
+        margin: 0 auto;
+
+    }
+
+}
