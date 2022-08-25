@@ -13,6 +13,7 @@ const indexRouter = require('./routes/index');
 const eventoRoutes = require('./routes/evento');
 const categoriaRoutes = require('./routes/categoria');
 const suscripcionRoutes = require('./routes/suscripcion');
+const cursoRoutes = require('./routes/curso');
 
 //conection to database
 mongoose.connect(process.env.MONGODB_URI)
@@ -43,6 +44,7 @@ app.use('/', indexRouter);
 app.use('/api', eventoRoutes);
 app.use('/api', categoriaRoutes);
 app.use('/api', suscripcionRoutes);
+app.use('/api', cursoRoutes);
 
 
 // catch 404 and forward to error handler
