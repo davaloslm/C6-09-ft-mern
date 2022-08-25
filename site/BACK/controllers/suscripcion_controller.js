@@ -22,7 +22,7 @@ exports.eliminarSuscripcion = (req, res) =>{
 
     Suscripcion.deleteOne( {email: { $eq: email}}, (error, response)=>{
         if (error) return res.status(400).json({ error });
-        console.log("borrado");
+        if (response) return res.status(200).json({"message": "La suscripción se ha eliminado correctamente"});
     } )
 
 
