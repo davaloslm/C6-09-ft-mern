@@ -23,12 +23,12 @@ const cursoSchema = new mongoose.Schema(
       min: 20,
       max: 200,
     },
-    fechaDeInicio: {
-      type: Date,
+    diasDeCurso: {
+      type: String,
       required: true,
     },
-    fechaDeFinalizacion: {
-      type: Date,
+    horariosDeCurso: {
+      type: String,
       required: true,
     },
     vacantes: {
