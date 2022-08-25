@@ -10,6 +10,12 @@ const cursoSchema = new mongoose.Schema(
       min: 5,
       max: 30,
     },
+    categoriaCurso: {
+      type: String,
+      required: true,
+      trim: true,
+      min: 4,
+    },
     descripcion: {
       type: String,
       required: true,
