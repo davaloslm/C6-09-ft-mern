@@ -10,8 +10,81 @@
     font-weight: bold;
     margin-top: 10px;
     margin-bottom: 25px;
-    font-weight: bold;
-    
     
 
+}
+
+
+@media screen and (min-width: 1024px){
+    .LoginBox {
+        display:flex;
+        margin-top: 60px;
+        justify-content: center;
+        
+ 
+    }
+    .Register{
+        width: 550px;
+    }
+    .CajaFORM{
+        width: 612px;
+        background-color:#FBF1EF;
+        margin-right: 20px;
+        padding: 20px;
+
+        
+    }
+   
+    #perfil {
+        padding: 25px;
+    }
+
+   
+    .ContainerLogin {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .ContainerLogin h1 {
+        margin-bottom: 20px;
+        
+    }
+
+    .Register h1 {
+        margin-bottom: 20px;
+    }
+
+
+    .Componentes_mapForm{
+        display: flex;
+        /* padding-top: 50px; */
+        margin-top: 50px;
+        
+        
+        
+        
+    }
+    
+
+
+
+   .Textos_mapa h3 {
+    padding-bottom: 20px;
+    font-size: 40px;
+    font-family: 'Antonio';
+   }
+
+   .ContainerMapa {
+    margin: 10px;
+   }
+
+   .ContainerMapa p{
+    padding-top: 15px;
+
+   }
+
+
+
+ 
 }
