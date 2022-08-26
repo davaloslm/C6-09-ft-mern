@@ -19,7 +19,7 @@
     .LoginBox {
         display:flex;
         margin-top: 60px;
-        /* justify-content: space-around; */
+        justify-content: center;
         
  
     }
