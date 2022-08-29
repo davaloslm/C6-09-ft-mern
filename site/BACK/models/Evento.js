@@ -9,6 +9,9 @@ const eventoSchema = new mongoose.Schema({
     min: 5,
     max: 30
   },
+  descripcion_card: {
+    type: String,
+  },
   descripcion: {
     type: String,
     required: true,
@@ -19,7 +22,7 @@ const eventoSchema = new mongoose.Schema({
   categoria:{
     type: String,
     //type: mongoose.Schema.Types.ObjectId, 
-    ref: 'Categoria', 
+    //ref: 'Categoria', 
     required: true
   },
   precio: {
@@ -27,7 +30,7 @@ const eventoSchema = new mongoose.Schema({
     required: true,
   },
   fecha: {
-    type: Date,
+    type: String,
     required: true,
   },
   imagen: {

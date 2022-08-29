@@ -49,8 +49,6 @@ const app = express();
 
 const swaggerDocs = swaggerJsDoc(swaggerOptions);
 
-console.log(swaggerDocs)
-
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
@@ -60,7 +58,7 @@ app.set('view engine', 'jade');
 app.use(cors())
 app.use(logger('dev'));
 app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
+app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use('/public', express.static(`${__dirname}/storage/imagenes`));
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocs));

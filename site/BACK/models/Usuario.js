@@ -50,8 +50,12 @@ usuarioSchema.virtual('password')
 
 usuarioSchema.methods = {
   authenticate: function(password){
-      return bcrypt.compare(password, this.hash_password)
+      return bcrypt.compareSync(password, this.hash_password)
   }
+}
+
+usuarioSchema.methods.setImgUrl = function setImgUrl(filename) {
+  this.imagenUsuario = `${process.env.HOST}:${process.env.PORT}/public/${filename}`
 }
 
 module.exports = mongoose.model('Usuario', usuarioSchema)
