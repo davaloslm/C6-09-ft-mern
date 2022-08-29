@@ -1,0 +1,759 @@
+.comprarContainer{
+    padding: 16px;
+    width: 360px;
+    margin: 0 auto;
+    background: #F5F5F5;
+}
+
+.divTitleComprar{
+
+    margin: 0 16px;
+    height: 36px;
+    background: #D55F60;
+    padding: 6px 10px;
+}
+
+.titleComprar{
+    font-family: 'Antonio';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    color: #FAFAF9;
+}
+
+.divEvento{
+    margin-top:24px;
+    width: 328px;
+    height: 84px;
+    background: #323786;
+    padding: 0 10px;
+}
+
+.titleEvento{
+    font-family: 'Antonio';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 32px;
+    color: #FAFAF9;
+    padding-top: 2px;
+}
+
+.subTitleEvento{
+    font-family: 'Antonio';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+    color: #FAFAF9;
+    margin-bottom: 9px;
+}
+
+.subTitleEventoDos{
+    font-family: 'Antonio';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+    color: #FAFAF9;
+}
+
+.divFuncionesForm{
+    display: flex;
+    flex-direction: column;
+    margin-top: 24px;
+    margin-bottom: 16px;    
+}
+
+.divFuncionesForm h2,
+.divFuncionesFormDos h2{
+    font-family: 'Antonio';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    color: #393842;
+    margin-bottom: 8px;
+}
+
+.selectFuncionesForm{
+    width: 328px;
+    height: 32px;
+    left: 16px;
+    top: 448px;
+    border: none;
+    background: #FBF1EF;
+    color: #393842;
+    padding: 7px 15px 1px;
+    font-family: 'Fira Sans Extra Condensed';/* no agarra el estilo de letra*/
+    font-style: italic;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 100%;
+    color: #393842;
+    padding: 7px 15px 1px;
+}
+
+.divImporte{
+    display: flex;
+    gap:8px ;
+    margin-top: 80px;
+}
+.divImporteTicket h2,
+.divImporte h2{
+    width: 160px;
+    height: 24px;
+    font-family: 'Antonio';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    color: #393842;
+    margin-bottom: 40px;
+}
+
+.formPersonal label,
+.formPersonal h2{
+width: 160px;
+    height: 24px;
+    font-family: 'Antonio';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    color: #393842;
+    margin-bottom: 16px;
+}
+
+.formPagoTarjeta label input,
+.formPersonal label input{
+    font-family: 'Fira Sans Extra Condensed';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 110%;
+    color: #393842;
+    margin-bottom: 16px;
+    padding-left: 15px;
+}
+
+.inputPersonal{
+    margin-left:0 ;
+}
+
+.formPagoTarjeta label{
+    width: 160px;
+    height: 24px;
+    font-family: 'Antonio';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    color: #393842;
+    margin-bottom: 16px;
+
+
+}
+.formPagoTarjeta h2{
+    margin-top:48px;
+    width: 160px;
+    height: 24px;
+    font-family: 'Antonio';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    color: #393842;
+    margin-bottom: 16px;
+}
+.inputPago{
+    font-family: 'Fira Sans Extra Condensed';
+    font-style: italic !important;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 100%;
+    color: #393842;
+    margin-left: 0;
+}
+
+.btnComprarEvento{
+    margin-top:48px;
+    margin-bottom: 80px;
+    font-family: 'Antonio';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    color: #FAFAF9;
+}
+
+.divQR{
+    display: flex;
+    justify-content: center;
+}
+.codigoQR{
+    margin: 29px 0;
+}
+
+/***** Estilos del Curso ***************************************/
+
+.divCurso{
+    width: 328px;
+    height: 84px;
+    left: 16px;
+    top: 308px;
+    background: #323786;
+    border-radius: 8px;
+    margin-top: 24px;
+}
+
+.titleCurso{
+    font-family: 'Antonio';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    color: #FAFAF9;
+    margin:7px 20px ;
+    padding-top: 7px;
+}
+
+.subTitleCurso{
+    font-family: 'Fira Sans Extra Condensed';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 110%;
+    color: #FAFAF9;
+    padding-left: 20px;
+}
+
+.divInfoCurso{
+    width: 328px;
+    height: 120px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-top: 24px;
+    gap: 8px;
+}
+
+.divInfo{
+    display: flex;
+    align-items: flex-end;
+}
+
+.divInfo h2{
+    font-family: 'Antonio';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    color: #393842;
+    width: 76px;
+height: 24px;
+}
+
+.divInfo h3{
+    font-family: 'Fira Sans Extra Condensed';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 110%;
+    display: flex;
+    align-items: center;
+    color: #393842;
+}
+
+.btnComprarCurso{
+    width: 124px;
+    height: 40px;
+    margin-bottom: 100px;
+    background: #D55F60;
+    border-radius: 8px;
+    padding: 0;
+    font-family: 'Antonio';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    color: #FAFAF9;
+}
+.cardComprarEvento{
+    display: none;
+}
+
+.infoImgCardComprarEvento{
+    display: none;        
+}
+
+.divImporteTicket{
+    display: flex;
+    gap:8px ;
+    margin-top: 16px;
+}
+
+.cantEntradasTicket,
+.fechaHoraFuncionTicket{
+    font-family: 'Fira Sans Extra Condensed'!important;
+    font-weight: 300 !important;
+    font-size: 18px !important;
+    line-height: 110%;
+    margin-left: 15px;
+}
+
+.titleDatosTicket{
+    margin: 17px 0 15px 0;
+}
+
+.divDivDatosTicket h3{
+    font-weight: 300 !important;
+    margin-left: 15px;
+    font-size: 18px;
+}
+.cardTicketEvento{
+    display: none;
+}
+.divTitleTicket{
+    width: 328px;
+    height: 36px;
+    background: #D55F60;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+.divTitleComprarCurso{
+    margin: 0;
+}
+
+.coordinaComprarCurso{
+    display: none;
+}
+
+.divBrandsCardComprarCurso{
+    display: none;
+}
+
+.divCursoTicketBig{
+    display: none;
+}
+
+.divQRBigTicketCurso{
+    display: none;        
+}
+
+@media screen and (min-width: 1440px){
+    .comprarContainer{
+        width:1440px;
+        position: relative;
+        padding: 0 100px;
+        margin-top: 32px;
+    }
+
+    .divEvento{
+        display: none;
+    }
+
+    .cardComprarEvento{
+        display: flex;
+       justify-content: center;
+       margin-top: 20px;
+       margin-bottom: 40px;
+    }
+
+    .divTitleComprar{
+        height: 72px;
+        display: flex;
+        align-items: center;
+        padding: 0;
+        margin: 0 auto;
+        width: 1240px;
+    }
+    
+    .titleComprar{
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 100%;
+        padding: 21px 32px;
+    }
+
+    .divImgCardComprar img{
+        width: 100%;
+        height: auto;
+    }
+
+    .infoImgCardComprarEvento{
+        display: flex;
+        position:absolute;
+        width: 653px;
+        height: 32px;
+        top: 40px;
+        right: 140px;
+        font-family: 'Antonio';
+        font-style: normal;
+        font-weight: 100;
+        font-size: 22px;
+        line-height: 28px;
+        z-index: 10000000000;
+        background: #D55F60;
+        color: #FAFAF9;
+        justify-content: center;
+    }
+
+    .comprarEventoInfoDos{
+        color: white;
+    }
+
+    .divFormulariosComprar{
+        display: flex;
+        gap: 16px;
+    }
+
+    .divImporte h2{
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 100%;
+        margin-bottom: 80px;
+    }
+    
+    .divFuncionesForm h2,
+    .divFuncionesFormDos h2,
+    .divFormulariosComprar h2{
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 100%;
+    }
+
+    .formPagoTarjeta h2{
+        margin-top: 0;
+        width: 100%;
+    }
+
+    .divFormulariosComprar label{
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 32px;        
+    }
+
+    .selectFuncionesForm{
+        width: 612px;
+        height: 40px;
+        font-family: 'Fira Sans Extra Condensed';
+        font-style: italic;
+        font-weight: 300;
+        font-size: 25px;
+        line-height: 100%;
+    }
+
+    .formPagoTarjeta label input, 
+    .formPersonal label input {
+        font-weight: 300 ;
+        font-size: 25px;
+        line-height: 100%;
+        margin-top: 16px;
+        margin-bottom: 32px;
+        width: 612px;
+        height: 40px;
+    }
+
+    .divFuncionesForm h2{
+        margin-bottom: 16px;
+    }
+
+    .divFuncionesForm{
+        margin-top: 48px;
+        margin-bottom: 40px;
+    }
+
+    .formPersonal h2,
+    .formPagoTarjeta h2{
+        margin-bottom: 30px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 100%;
+        color: #393842;
+    }
+
+    .formPagoTarjeta label, 
+    .formPersonal label{
+        margin-bottom: 16px;
+        font-family: 'Antonio';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 32px;
+        color: #393842;        
+    }
+
+    .btnComprarEvento{
+        font-family: 'Fira Sans Extra Condensed';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 28px;
+        text-align: center;
+    }
+    .cardTicket{
+        width: 1240px;
+        height: 440px;
+        background: #323786;
+    }
+    
+    .codigoQR{
+        display: none;
+    }
+
+    .divInfoCardDosTicket{
+        padding-left: 0;
+    }
+
+    .divInfoTicketFormBig{
+        display: flex;
+        height: 502px;
+    }
+
+    .QRbig{
+        width: 360px !important;
+        margin: 40px 54px 40px 94px;
+    }
+
+    .cardTicketEvento{
+        display: flex;
+        background-color: #323786;
+        margin: 32px 0;
+        position: relative;
+    }
+    .infoImgCardticketEvento{
+        right: 40px;
+    }
+
+    .divTitleTicket{
+        width: 1240px;
+        height: 72px;
+        padding-top: 0;
+        padding-left: 0;
+    }
+
+    .divFormImporte{
+        width: 492px;
+        display: flex;
+        flex-direction: column;
+
+
+    }
+
+    .divFormImporteDatosTicket{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        margin-top: 80px;
+
+    }
+
+    .divDatosTicket{
+        width: 612px;
+        height: 476px;
+    }
+
+    .titleDivDatosTicket{
+        font-size: 30px !important;
+    }
+
+    .titleDatosTicket{
+        font-size: 25px !important;
+        width: 612px !important;
+        margin-bottom: 24px !important;
+        margin-top: 40px !important;
+    }
+
+    .divDivDatosTicket h3{
+        font-family: 'Fira Sans Extra Condensed';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 25px;
+        line-height: 100%;
+        color: #393842;
+    }
+
+    .divFuncionesForm{
+        margin-top: 0;
+    }
+
+    .fechaHoraFuncionTicket{
+        font-size: 25px !important;
+        margin-top: 8px !important;
+    }
+
+    .cantEntradasTicket{
+        margin-top: 24px;
+        font-size: 25px !important;
+    }
+
+    .divImporteTicket h2, .divImporte h2 {
+        font-family: 'Antonio';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 100%;
+        color: #393842;
+        margin-top: 40px;
+    }
+
+    .divComprarCurso{
+        width: 1240px;
+        height: 232px;
+        padding: 30px 0px 30px 40px;
+    }
+
+    .divTextosComprar{
+        width: 894px;
+        height: 172px;
+        position: relative;
+    }
+
+    .titleCurso{
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 65px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .subTitleCurso{
+        font-family: 'Antonio';
+        font-weight: 100;
+        font-size: 30px;
+        line-height: 39px;
+        padding-left: 0;
+    }
+
+    .coordinaComprarCurso{
+        display: flex;
+        margin-top: 41px;
+        font-family: 'Antonio';
+        font-style: normal;
+        font-weight: 100;
+        font-size: 25px;
+        line-height: 32px;
+        color: #FAFAF9;
+    }
+
+    .divInfoCurso{
+        display: flex;
+        flex-direction: row;
+        width: 1240px;
+        margin-top: 40px;
+        height: auto;
+    }
+    .divInfo{
+        display: flex;
+        flex-direction: column;
+        width: 298px;
+        align-items: flex-start;
+        gap: 24px;
+    }
+
+    .divInfo h3{
+        font-family: 'Fira Sans Extra Condensed';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 25px;
+        line-height: 100%;
+        color: #393842;
+    }
+
+    .divInfo h2{
+        font-family: 'Antonio';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 100%;
+        color: #393842;
+    }
+    .divFormulariosComprarCurso{
+        display: flex;
+        gap: 16px;
+    }
+
+    .btnComprarCurso{
+        font-family: 'Fira Sans Extra Condensed';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 120%;
+        text-align: center;
+        color: #FAFAF9;
+        width: 196px;
+        height: 48px;
+        background: #D55F60;
+        border-radius: 8px;
+    }
+
+    .divBrandsCardComprarCurso{
+        display: flex;
+        position: absolute;
+        right: 40px;
+        bottom: 0;
+    }
+
+    .divComprarCursoSmall{
+        position: relative;
+    }
+
+    .divCursoTicket{
+        display: none;
+    }
+
+    .divCursoTicketBig{
+        display: flex;
+        width: 1240px;
+        top: 376px;
+        background: #323786;
+        margin-top: 32px;
+        border-radius: 16px;
+    }
+
+    .divQRBigTicketCurso{
+        display: flex;
+    }
+
+    .codigoQRigTicketCurso{
+        padding: 16px 49px;
+    }
+
+    .divCursoTicketSmall{
+        padding: 30px 40px 30px 0;
+    }
+
+    .divBrandsCardTicket{
+        position: absolute;
+        right: 40px;
+        bottom: 30px;
+    }
+    
+    .divImporteDatosTicket{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        margin-top: 80px;
+    }
+    
+    .divImporte, 
+    .divImporteTicket{
+        gap: 145px;
+    }
+
+
+    .divImporteTicket h2,
+    .divImporteTicket h3,
+    .divImporteTicket{
+        margin-top: 0;
+    }
+
+    
+}
