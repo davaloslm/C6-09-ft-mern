@@ -13,6 +13,11 @@ import Musica from './pages/Musica.js'
 import Cine from './pages/CinePage.js'
 import PreguntasFrecuentes from './../src/pages/PreguntasFrecuentes'
 import Footer from './components/footer/Footer'
+import ComprarEvento from "./components/comprar/ComprarEvento";
+import TicketEvento from "./components/comprar/TicketEvento";
+import ComprarCurso from "./components/comprar/ComprarCurso";
+import TicketCurso from "./components/comprar/TicketCurso";
+
 
 
 
@@ -37,6 +42,10 @@ function App() {
           <Route path="/musica" element ={<Musica/>} />
           <Route path="/cine" element ={<Cine/>} />
           <Route path="/preguntas-frecuentes" element ={<PreguntasFrecuentes/>} />
+          <Route path="/comprar-evento" element ={<ComprarEvento/>} />
+          <Route path="/ticket-evento" element ={<TicketEvento/>} />
+          <Route path="/comprar-curso" element ={<ComprarCurso/>} />
+          <Route path="/ticket-curso" element ={<TicketCurso/>} />
 
 
         </Routes>
