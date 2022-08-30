@@ -15,12 +15,16 @@ exports.añadirEvento = (req, res) => {
       fechaDeFinalizacion,
       autor,
       produccion,
+      genero,
       director,
       elenco,
       idea,
       musica,
       reemplazo,
       funciones,
+      origen,
+      año,
+      duracion,
     } = req.body;
     console.log(req.body);
     console.log(req);
@@ -37,12 +41,16 @@ exports.añadirEvento = (req, res) => {
       fechaDeFinalizacion,
       autor,
       produccion,
+      genero,
       director,
       elenco,
       idea,
       musica,
       reemplazo,
       funciones,
+      origen,
+      año,
+      duracion,
     });
 
     if (req.file) {
@@ -70,11 +78,9 @@ exports.obtenerEvento = (req, res) => {
       .populate({ path: "categoria", select: "_id name imagen" })
       .exec((error, evento) => {
         if (error)
-          return res
-            .status(400)
-            .json({
-              mensaje: "El Id de evento no se encuentra en la base de datos",
-            });
+          return res.status(400).json({
+            mensaje: "El Id de evento no se encuentra en la base de datos",
+          });
         if (evento) return res.status(200).json({ evento });
       });
   } else {
@@ -92,10 +98,10 @@ exports.obtenerTodosLosEventos = (req, res) => {
   });
 };
 
-exports.actualizarEvento = async(req, res) => {
+exports.actualizarEvento = async (req, res) => {
   const { idEventoo } = req.params;
-  console.log(req.params)
-  console.log(req.file)
+  console.log(req.params);
+  console.log(req.file);
   console.log(idEventoo);
   const {
     nombre,
@@ -122,41 +128,43 @@ exports.actualizarEvento = async(req, res) => {
     duracion,
   } = req.body;
   //let imagenNueva;
-  console.log(idEventoo)
+  console.log(idEventoo);
   try {
-  if (idEventoo) {
-    const evento = await Evento.findOne({ _id: idEventoo })
-    console.log(evento)
-    console.log(req.file)
-    console.log('el nuevi eventoooo')
+    if (idEventoo) {
+      const evento = await Evento.findOne({ _id: idEventoo });
+      console.log(evento);
+      console.log(req.file);
+      console.log("el nuevi eventoooo");
 
-    await evento.updateOne(
-      {
-        nombre,
-        descripcion_card,
-        descripcion,
-        categoria,
-        precio,
-        fecha,
-        imagen: req.file.filename,
-        stockEntradas,
-        horarios,
-        fechaDeInicio,
-        fechaDeFinalizacion,
-        autor,
-        produccion,
-        genero,
-        director,
-        elenco,
-        idea,
-        musica,
-        reemplazo,
-        funciones,
-        origen,
-        año,
-        duracion
-      }, {new: true})
-/*      async(error, eventoActualizado) => {
+      await evento.updateOne(
+        {
+          nombre,
+          descripcion_card,
+          descripcion,
+          categoria,
+          precio,
+          fecha,
+          imagen: req.file.filename,
+          stockEntradas,
+          horarios,
+          fechaDeInicio,
+          fechaDeFinalizacion,
+          autor,
+          produccion,
+          genero,
+          director,
+          elenco,
+          idea,
+          musica,
+          reemplazo,
+          funciones,
+          origen,
+          año,
+          duracion,
+        },
+        { new: true }
+      );
+      /*      async(error, eventoActualizado) => {
         if (error)
           return res
             .status(400)
@@ -171,12 +179,14 @@ exports.actualizarEvento = async(req, res) => {
         
       }
     );}*/
-  } else {
-    return res.status(400).json({ mensaje: "El Id de evento no es correcto" });
+    } else {
+      return res
+        .status(400)
+        .json({ mensaje: "El Id de evento no es correcto" });
+    }
+  } catch (e) {
+    return res.status(500).json({ mensaje: "Hubo un error en el servidor" });
   }
-} catch (e) {
-  return res.status(500).json({mensaje: 'Hubo un error en el servidor'})
-}
 };
 
 exports.eliminarEvento = (req, res) => {
