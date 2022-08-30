@@ -4,6 +4,7 @@ exports.añadirEvento = (req, res) => {
   try {
     const {
       nombre,
+      descripcion_card,
       descripcion,
       categoria,
       precio,
@@ -25,6 +26,7 @@ exports.añadirEvento = (req, res) => {
     console.log(req);
     const evento = new Evento({
       nombre,
+      descripcion_card,
       descripcion,
       categoria,
       precio,
