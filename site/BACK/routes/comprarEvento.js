@@ -5,7 +5,7 @@ const {realizarCompra, obtenerCompra, obtenerTodasCompras} = require("../control
 
 
 router.post('/comprar/:idUsuario/:idEvento', requerirIniciarSesion, realizarCompra)
-router.get('/comprar/:idCompra', requerirIniciarSesion, obtenerCompra)
+router.get('/comprar/:idUsuario/:idCompra', requerirIniciarSesion, obtenerCompra)
 router.get('/compras/:idUsuario', requerirIniciarSesion, obtenerTodasCompras)
 
 module.exports = router;

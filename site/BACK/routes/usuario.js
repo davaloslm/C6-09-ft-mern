@@ -9,8 +9,8 @@ const router = express.Router()
 router.post('/registrarse', validarDatos,registrarUsuario)
 router.get('/perfil/:idUsuario', requerirIniciarSesion, obtenerDatosUsuario)
 router.post('/iniciarSesion', validarDatosLogin, iniciarSesion)
-router.put('/actualizarPerfil/:idUsuario', actualizarPerfil);
-router.get('/cerrarSesion', requerirIniciarSesion, cerrarSesion)
+router.put('/actualizarPerfil/:idUsuario',requerirIniciarSesion, actualizarPerfil);
+router.get('/cerrarSesion/:idUsuario', requerirIniciarSesion, cerrarSesion)
 router.get('/eliminarUsuario/:idUsuario', requerirIniciarSesion, eliminarUsuario)
 
 module.exports = router;

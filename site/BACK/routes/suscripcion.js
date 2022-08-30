@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const {  suscripcionNewsLetter, eliminarSuscripcion } = require('../controllers/suscripcion_controller');
+const {  suscripcionNewsLetter, eliminarSuscripcion, verTodosLosSuscriptores } = require('../controllers/suscripcion_controller');
 
 // Routes
 /**
@@ -16,6 +16,7 @@ const {  suscripcionNewsLetter, eliminarSuscripcion } = require('../controllers/
   *     description: error al crear suscripción
   */
 router.post('/suscribirse', suscripcionNewsLetter);
-router.delete('/suscribirse', eliminarSuscripcion); 
+router.delete('/suscribirse', eliminarSuscripcion);
+router.get('/suscriptores', verTodosLosSuscriptores)
 
 module.exports = router;
