@@ -176,7 +176,7 @@ exports.actualizarEvento = async (req, res) => {
           console.log(evento)
 
           return res.status(200).json({ eventoActualizado });
-        
+  
       }
     );}*/
     } else {
@@ -209,3 +209,17 @@ exports.eliminarEvento = (req, res) => {
       .json({ mensaje: "No se ha proporcionado un Id de evento." });
   }
 };
+
+exports.obtenerEventosCategoria = (req, res) => {
+  const { idCategoria } = req.params;
+
+  if(idCategoria){
+    Evento.find({ categoria: idCategoria })
+          .exec((error, eventosSegunCategoria) => {
+            if(error) return res.status(400).json({ mensaje: 'Hubo un error al obtener los eventos según la categoria'})
+            if(eventosSegunCategoria) return res.status(200).json({ eventosSegunCategoria })
+          })
+  } else {
+    return res.status(400).json({mensaje:'Ingrese un Id de categoria válido.'})
+  }
+}
