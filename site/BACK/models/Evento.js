@@ -20,9 +20,9 @@ const eventoSchema = new mongoose.Schema({
     max: 300
   },
   categoria:{
-    type: String,
-    //type: mongoose.Schema.Types.ObjectId, 
-    //ref: 'Categoria', 
+    //type: String,
+    type: mongoose.Schema.Types.ObjectId, 
+    ref: 'Categoria', 
     required: true
   },
   precio: {
@@ -31,7 +31,6 @@ const eventoSchema = new mongoose.Schema({
   },
   fecha: {
     type: String,
-    required: true,
   },
   imagen: {
     type: String,
@@ -56,6 +55,9 @@ const eventoSchema = new mongoose.Schema({
   produccion: {
     type: String,
   },
+  genero: {
+    type: String
+  },
   director: {
     type: String,
     trim: true,
@@ -74,6 +76,15 @@ const eventoSchema = new mongoose.Schema({
   },
   funciones:{
     type: String,
+  },
+  origen: {
+    type: String
+  },
+  año: {
+    type: String
+  },
+  duracion: {
+    type: String
   },
 }, {timestamps: true});
 

@@ -6,11 +6,11 @@ const { requerirIniciarSesion } = require('../middleware/requerirIniciarSesion')
 
 const router = express.Router()
 
-router.post('/registrarse', validarDatos ,registrarUsuario)
-router.get('/perfil/:idUsuario', obtenerDatosUsuario)
+router.post('/registrarse', validarDatos,registrarUsuario)
+router.get('/perfil/:idUsuario', requerirIniciarSesion, obtenerDatosUsuario)
 router.post('/iniciarSesion', validarDatosLogin, iniciarSesion)
-router.put('/actualizarPerfil/:idUsuario', requerirIniciarSesion, actualizarPerfil)
+router.put('/actualizarPerfil/:idUsuario', actualizarPerfil);
 router.get('/cerrarSesion', requerirIniciarSesion, cerrarSesion)
-router.get('/eliminarUsuario/:idUsuario',requerirIniciarSesion, eliminarUsuario)
+router.get('/eliminarUsuario/:idUsuario', requerirIniciarSesion, eliminarUsuario)
 
 module.exports = router;

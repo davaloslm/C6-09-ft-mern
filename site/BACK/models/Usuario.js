@@ -36,11 +36,11 @@ const usuarioSchema = new mongoose.Schema({
     type: String,
     required: true
 },
-rol: {
+  rol: {
     type: String,
     enum: ['admin', 'user'],
     default: 'user'
-}
+  }
 }, {timestamps: true});
 
 usuarioSchema.virtual('password')

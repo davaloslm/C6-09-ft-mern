@@ -19,6 +19,7 @@ const categoriaRoutes = require('./routes/categoria');
 const suscripcionRoutes = require('./routes/suscripcion');
 const cursoRoutes = require('./routes/curso');
 const usuarioRoutes = require('./routes/usuario');
+const inscribirseRoutes = require('./routes/inscribirCurso');
 
 //conection to database
 mongoose.connect(process.env.MONGODB_URI)
@@ -65,12 +66,14 @@ app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocs));
 //app.use(express.static(path.join(__dirname, 'public')));
 
 
+
 app.use('/', indexRouter);
 app.use('/api', eventoRoutes);
 app.use('/api', categoriaRoutes);
 app.use('/api', suscripcionRoutes);
 app.use('/api', cursoRoutes);
 app.use('/api', usuarioRoutes);
+app.use('/api', inscribirseRoutes);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

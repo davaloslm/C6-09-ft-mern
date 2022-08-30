@@ -11,6 +11,7 @@ exports.registrarUsuario = (req, res) => {
 
     const hash_password = bcrypt.hashSync(contraseña, 10)
     const usuario = new Usuario({ nombre, apellido, dni, email, hash_password: hash_password })
+    console.log(usuario)
     usuario.save((error, response) => {
       if(error) return res.status(400).json({mensaje: 'Hubo un problema al crear el usuario'});
       if(response) return res.status(201).json({ response });
@@ -23,7 +24,9 @@ exports.registrarUsuario = (req, res) => {
 exports.obtenerDatosUsuario = (req, res) => {
   const { idUsuario } = req.params;
   if(idUsuario) {
-    Usuario.findOne({_id: idUsuario}, (error, usuario) => {
+    Usuario.findOne({_id: idUsuario})
+      .select("_id nombre apellido dni email rol")
+      .exec((error, usuario) => {
       if(error) return res.status(400).json({mensaje: 'El Id de usuario no existe en la base de datos'})
       if(usuario) return res.status(200).json({ usuario })
     })
@@ -35,7 +38,7 @@ exports.obtenerDatosUsuario = (req, res) => {
 exports.iniciarSesion = (req, res) => {
   const erroresDatos = validationResult(req);
   const { email, contraseña } = req.body;
-  
+  console.log(req.body)
   if(erroresDatos.isEmpty()) {
     Usuario.findOne({email: email}, (error, usuario) => {
       if(error) return res.status(400).json({mensaje: 'El usuario no existe en la base de datos'})
@@ -60,28 +63,35 @@ exports.actualizarPerfil = (req,res)=>{
   const { idUsuario } = req.params;
   console.log(idUsuario)
   const { nombre, apellido, dni, email, contraseña } = req.body;
+  console.log(req.body)
+  console.log(req.file)
   let imagenUsuario;
   
   if(idUsuario){
-    const usuario = Usuario.findOne({_id: idUsuario}, (error, usuario) => {
-      if(error) return res.status(400).json({mensaje: 'El Id de usuario no se encuentra en la base de datos.'})
-      if(usuario) return res.status(200).json({ usuario })
-    })
+   /* const usuario = Usuario.findOne({_id: idUsuario})
+                            .exec((error, usuario) => {
+                              if(error) return res.status(400).json({mensaje:'No se encontro el usuario en la base de datos '})
+                              if(usuario) 
+                            })
+    console.log(usuario)
     if(req.file) {
       imagenUsuario = usuario.setImgUrl(req.file.filename);
-    }
-    usuario.updateOne(
+    }*/
+    const hash_password = bcrypt.hashSync(contraseña, 10);
+    Usuario.findOneAndUpdate({_id: idUsuario},
         {
-        nombre,
-        apellido,
-        dni,
-        email,
-        imagenUsuario,
-        hash_password: contraseña
-      }, (error, usuarioActualizado)=>{
+        nombre: nombre,
+        apellido: apellido,
+        dni: dni,
+        email: email,
+        hash_password: hash_password
+      },{new: true}, ((error, usuarioActualizado)=>{
           if(error) return res.status(400).json({ mensaje:'hubou n problema al actgualiazar' })
-          if(curso) return res.status(200).json({ usuarioActualizado })
-      });
+          if(usuarioActualizado) {
+            console.log(usuarioActualizado)
+            return res.status(200).json({ usuarioActualizado })
+          }
+          }));
 
       }
   else{
