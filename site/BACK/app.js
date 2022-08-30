@@ -20,6 +20,7 @@ const suscripcionRoutes = require('./routes/suscripcion');
 const cursoRoutes = require('./routes/curso');
 const usuarioRoutes = require('./routes/usuario');
 const inscribirseRoutes = require('./routes/inscribirCurso');
+const comprarRoutes = require('./routes/comprarEvento');
 
 //conection to database
 mongoose.connect(process.env.MONGODB_URI)
@@ -74,6 +75,7 @@ app.use('/api', suscripcionRoutes);
 app.use('/api', cursoRoutes);
 app.use('/api', usuarioRoutes);
 app.use('/api', inscribirseRoutes);
+app.use('/api', comprarRoutes);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
