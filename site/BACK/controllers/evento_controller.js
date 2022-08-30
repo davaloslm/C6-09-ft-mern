@@ -23,7 +23,7 @@ exports.añadirEvento = (req, res) => {
       reemplazo,
       funciones,
       origen,
-      año,
+      anio,
       duracion,
     } = req.body;
     console.log(req.body);
@@ -49,7 +49,7 @@ exports.añadirEvento = (req, res) => {
       reemplazo,
       funciones,
       origen,
-      año,
+      anio,
       duracion,
     });
 
@@ -75,7 +75,7 @@ exports.obtenerEvento = (req, res) => {
 
   if (idEvento) {
     Evento.findOne({ _id: idEvento })
-      .populate({ path: "categoria", select: "_id name imagen" })
+      .populate({ path: "categoria", select: "_id nombre imagen" })
       .exec((error, evento) => {
         if (error)
           return res.status(400).json({
@@ -124,7 +124,7 @@ exports.actualizarEvento = async (req, res) => {
     reemplazo,
     funciones,
     origen,
-    año,
+    anio,
     duracion,
   } = req.body;
   //let imagenNueva;
@@ -159,7 +159,7 @@ exports.actualizarEvento = async (req, res) => {
           reemplazo,
           funciones,
           origen,
-          año,
+          anio,
           duracion,
         },
         { new: true }

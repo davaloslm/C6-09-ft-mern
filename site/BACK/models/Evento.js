@@ -80,7 +80,7 @@ const eventoSchema = new mongoose.Schema({
   origen: {
     type: String
   },
-  año: {
+  anio: {
     type: String
   },
   duracion: {
