@@ -5,15 +5,18 @@ exports.suscripcionNewsLetter = (req, res) =>{
     const {nombre, apellido, email} = req.body;
 
     console.log(nombre, apellido, email);
+    if(nombre, apellido, email) {
+      const suscripcion = new Suscripcion({nombre, apellido, email})
 
-    const suscripcion = new Suscripcion({nombre, apellido, email})
-
-    suscripcion.save((error, suscripcion)=>{
-        if (error) return res.status(400).json({ error });
-        if (suscripcion) {
-        res.status(201).json({ suscripcion });
-        }
-    })
+      suscripcion.save((error, suscripcion)=>{
+          if (error) return res.status(400).json({ error });
+          if (suscripcion) {
+          res.status(201).json({ suscripcion });
+          }
+      })
+    } else {
+      return res.status(400).json({mensaje: 'Ingrese los datos correctamente '})
+    }
 }
 
 exports.eliminarSuscripcion = (req, res) =>{
