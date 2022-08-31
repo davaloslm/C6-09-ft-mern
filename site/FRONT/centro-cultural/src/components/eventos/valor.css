@@ -13,3 +13,17 @@
     font-size: 18px;
     line-height: 110%;
 }
+
+@media (min-width:1440px){
+    .price-container p{
+        font-weight: 700;
+        font-size: 28px;
+    }
+
+    .price-container span{
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 100%;;
+    }
+    
+}

@@ -10,7 +10,8 @@ function HorariosEscenicasCine(props) {
     return (
         <>
         <div className='horarios-escenicas-cine-container'>
-            <span>Funciones</span>
+            <span className='event-horario'>Horario</span>
+            <p ><b>Funciones</b></p>
             <p>{props.fechaDeInicio} al {props.fechaDeFinalizacion} </p>
 
 

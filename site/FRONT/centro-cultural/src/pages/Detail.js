@@ -16,22 +16,33 @@ const Detail = () => {
 
             <Card/>
 
-            <HorariosEscenicasCine
-                fechaDeInicio = "Viernes 8 de Julio"
-                fechaDeFinalizacion = "Domingo 21 de Agosto"
-            />
+            <div className='event-container'>
+            <div className='event-grid-container'>
+                <div className='event-grid-1'>
+                    <HorariosEscenicasCine
+                        fechaDeInicio = "Viernes 8 de Julio"
+                        fechaDeFinalizacion = "Domingo 21 de Agosto"
+                    />
 
-            <Valor
-                precio = "800"
-            />
+                    <Valor
+                        precio = "800"
+                    />
 
-            <button>
-                Comprar entrada
-            </button>
+                    <button>
+                        Comprar entrada
+                    </button>
+                </div>
 
-            <Sinopsis/>
+                <div className='event-grid-2'>
+                <Sinopsis/>
+                </div>
 
-            <FichaTecnica/>
+
+                <div className='event-grid-3'>
+                <FichaTecnica/>
+                </div>
+            </div>
+            </div>
 
 
             <button>
