@@ -100,19 +100,25 @@ exports.actualizarPerfil = (req,res)=>{
 }
 
 exports.cerrarSesion = (req, res) => {
-  req.user  = '';
-//  delete req.headers;
-  //const headders = req.headers;
-  //headders.delete('Authorization')
-  const authorization= { authorization: ""};
-  //console.log(req.headers)
-  Object.assign(req.headers, authorization)
-  console.log(req.headers)
-
-  return res.status(200).json({
-    mensaje: "Se ha cerrado sesion exitosamente...!",
-    headers: req.headers
-  });
+  const {idUsuario} = req.params;
+  if(idUsuario){
+    req.user  = '';
+    //  delete req.headers;
+      //const headders = req.headers;
+      //headders.delete('Authorization')
+      const authorization= { authorization: ""};
+      //console.log(req.headers)
+      Object.assign(req.headers, authorization)
+      console.log(req.headers)
+    
+      return res.status(200).json({
+        mensaje: "Se ha cerrado sesion exitosamente...!",
+        headers: req.headers
+      });
+  } else {
+    return res.status(400).json({ mensaje: 'Ingrese un Id de usuario válido'})
+  }
+  
 }
 
 exports.eliminarUsuario = (req, res) => {

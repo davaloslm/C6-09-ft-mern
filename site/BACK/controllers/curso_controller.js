@@ -21,7 +21,7 @@ exports.crearCurso = (req,res)=>{
 
 exports.obtenerCurso = (req,res)=>{
 
-    const {id} = req.body;
+    const {id} = req.params;
 
     if(id){
 

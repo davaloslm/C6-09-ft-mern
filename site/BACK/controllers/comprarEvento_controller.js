@@ -23,8 +23,7 @@ exports.realizarCompra = (req, res) =>{
 }
 
 exports.obtenerCompra = (req, res) => {
-
-    const { idCompra} = req.params;
+    const { idUsuario, idCompra} = req.params;
 
     if(idCompra){
         Compra.findOne({_id: idCompra})

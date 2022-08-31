@@ -24,6 +24,12 @@ exports.eliminarSuscripcion = (req, res) =>{
         if (error) return res.status(400).json({ error });
         if (response) return res.status(200).json({ mensaje : "La suscripción se ha eliminado correctamente"});
     } )
+}
 
-
+exports.verTodosLosSuscriptores = (req, res) => {
+  Suscripcion.find()
+              .exec((error, suscriptores)=>{
+                if(error) return res.status(400).json({ mensaje: 'Hubo un problema al obtener los suscriptores'})
+                if(suscriptores) return res.status(200).json({ suscriptores})
+              })
 }
