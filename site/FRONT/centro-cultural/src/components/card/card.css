@@ -217,4 +217,27 @@
     .imgSliderCuatro{
         background-image: url("../../assets/cineFantasma.png");
     }
+
+    .imgCard img{
+        width: auto;
+        height: 440px;
+        object-position: -78px 0px;
+    }
+
+    
+    .infoCardDetail{
+        margin-top: 41px;
+    }
+    .infoCardDetail h4{
+        font-family: 'Antonio';
+        font-style: normal;
+        font-weight: 100;
+        font-size: 25px;
+        line-height: 32px;
+        color: #FAFAF9;
+    }
+
+    .infoCard{
+        margin-bottom: 13px;
+    }
 }
