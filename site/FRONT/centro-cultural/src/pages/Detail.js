@@ -46,7 +46,7 @@ const Detail = () => {
             </div>
 
 
-            <button>
+            <button className='bottom-button'>
                 Comprar entrada
             </button>
 

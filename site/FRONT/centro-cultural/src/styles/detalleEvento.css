@@ -24,9 +24,7 @@ section.event{
     border-radius: 10px;
     font-size: 16px;
     border: none;
-    margin: 0 auto;
-      margin-top: 0px;
-    margin-top: 25px;
+    margin: 48px auto;
     cursor: pointer;
   
 }
@@ -37,6 +35,7 @@ section.event{
 
     .event-container{
         width: 1240px;
+        height: 800px;
         margin: 0 auto;
 
     }
@@ -52,7 +51,9 @@ section.event{
         
     .event-grid-1 {
         grid-area:  1 / 5 / 2 / 7;
-        background-color: #f1f1f1; }
+        background-color: #f1f1f1;
+        margin-left: 16px;
+    } 
     .event-grid-2 { grid-area:  1 / 1 / 2 / 5; }
     .event-grid-3 { grid-area:  2 / 1 / 3 / 5; }
 
@@ -70,6 +71,10 @@ section.event{
         margin-top: 0px;
         margin-top: 25px;
         cursor: pointer;
+    }
+
+    .event button.bottom-button{
+        display: none;
     }
     
 }
