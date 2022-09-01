@@ -13,3 +13,25 @@ div.horarios-escenicas-cine-container p{
     font-size: 18px;
     line-height: 110%;
 }
+
+div.horarios-escenicas-cine-container span.event-horario{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 100%;
+}
+
+@media(min-width: 1440px){
+
+    div.horarios-escenicas-cine-container span.event-horario{
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 100%;
+    }
+
+    div.horarios-escenicas-cine-container p{
+        font-weight: 300;
+        font-size: 28px;
+        line-height: 110%;
+    }
+
+}

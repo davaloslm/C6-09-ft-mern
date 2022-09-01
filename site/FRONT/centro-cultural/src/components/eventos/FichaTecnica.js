@@ -5,7 +5,7 @@ import { evento } from "./Sinopsis";
 const FichaTecnica = () => {
   return (
     <div className="ficha-container">
-      <h2>FichaTecnica</h2>
+      <h2>Ficha Técnica</h2>
       <div>
         <h3>Autor/Libro, Director Adjunto</h3>
         <p>{evento.autor}</p>

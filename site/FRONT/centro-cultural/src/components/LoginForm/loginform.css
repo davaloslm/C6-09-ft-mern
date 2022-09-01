@@ -1,4 +1,4 @@
-input {
+.InputLogin {
     padding: 5px;
     margin: 5px;
     width: 95%;
@@ -11,7 +11,7 @@ input {
     
 }
 
-label {
+.LoginLabel {
     /* font-family: 'Bebas Neue Pro'; */
     font-style: normal;
     font-weight: 400;

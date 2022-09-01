@@ -16,22 +16,31 @@ const usuarioSchema = new mongoose.Schema({
     min: 3,
     max: 20
   },
+  dni: {
+    type: String,
+    required: true,
+    min: 7,
+  },
   email: {
     type: String,
     required: true,
     trim: true,
     unique: true,
     lowercase: true,
-  }, 
+    min: 8
+  },
+  imagenUsuario: {
+    type: String,
+  },
   hash_password: {
     type: String,
     required: true
 },
-rol: {
+  rol: {
     type: String,
     enum: ['admin', 'user'],
     default: 'user'
-}
+  }
 }, {timestamps: true});
 
 usuarioSchema.virtual('password')
@@ -43,6 +52,10 @@ usuarioSchema.methods = {
   authenticate: function(password){
       return bcrypt.compareSync(password, this.hash_password)
   }
+}
+
+usuarioSchema.methods.setImgUrl = function setImgUrl(filename) {
+  this.imagenUsuario = `${process.env.HOST}:${process.env.PORT}/public/${filename}`
 }
 
 module.exports = mongoose.model('Usuario', usuarioSchema)

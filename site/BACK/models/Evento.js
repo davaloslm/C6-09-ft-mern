@@ -9,6 +9,9 @@ const eventoSchema = new mongoose.Schema({
     min: 5,
     max: 30
   },
+  descripcion_card: {
+    type: String,
+  },
   descripcion: {
     type: String,
     required: true,
@@ -17,6 +20,7 @@ const eventoSchema = new mongoose.Schema({
     max: 300
   },
   categoria:{
+    //type: String,
     type: mongoose.Schema.Types.ObjectId, 
     ref: 'Categoria', 
     required: true
@@ -26,8 +30,7 @@ const eventoSchema = new mongoose.Schema({
     required: true,
   },
   fecha: {
-    type: Date,
-    required: true,
+    type: String,
   },
   imagen: {
     type: String,
@@ -52,6 +55,9 @@ const eventoSchema = new mongoose.Schema({
   produccion: {
     type: String,
   },
+  genero: {
+    type: String
+  },
   director: {
     type: String,
     trim: true,
@@ -71,7 +77,19 @@ const eventoSchema = new mongoose.Schema({
   funciones:{
     type: String,
   },
-
+  origen: {
+    type: String
+  },
+  anio: {
+    type: String
+  },
+  duracion: {
+    type: String
+  },
 }, {timestamps: true});
+
+eventoSchema.methods.setImgUrl = function setImgUrl(filename) {
+  this.imagen = `${process.env.HOST}:${process.env.PORT}/public/${filename}`
+}
 
 module.exports = mongoose.model('Evento', eventoSchema)

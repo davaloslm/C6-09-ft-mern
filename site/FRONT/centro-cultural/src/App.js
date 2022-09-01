@@ -14,6 +14,12 @@ import Registro from './pages/Registro'
 import TuCuenta from './pages/TuCuenta'
 import PreguntasFrecuentes from './../src/pages/PreguntasFrecuentes'
 import Footer from './components/footer/Footer'
+import ComprarEvento from "./components/comprar/ComprarEvento";
+import TicketEvento from "./components/comprar/TicketEvento";
+import ComprarCurso from "./components/comprar/ComprarCurso";
+import TicketCurso from "./components/comprar/TicketCurso";
+import PageEventos from "./pages/PageEventos";
+
 
 
 
@@ -31,13 +37,18 @@ function App() {
 
           <Route path="/detail" element = {<Detail/>} />
           <Route path="/perfil" element = {<Perfil/>} />
-          <Route path="/registro" element = {<Registro/>} />
-          <Route path="/cuenta" element = {<TuCuenta/>} />
+
+
+          <Route path="/eventos/:itemId" element ={<PageEventos/>} />
           <Route path="/artes-escenicas" element ={<ArtesEscenicasPage/>} />
           <Route path="/artes-visuales" element ={<ArtesVisualesPage/>} />
           <Route path="/musica" element ={<Musica/>} />
           <Route path="/cine" element ={<Cine/>} />
           <Route path="/preguntas-frecuentes" element ={<PreguntasFrecuentes/>} />
+          <Route path="/comprar-evento" element ={<ComprarEvento/>} />
+          <Route path="/ticket-evento" element ={<TicketEvento/>} />
+          <Route path="/comprar-curso" element ={<ComprarCurso/>} />
+          <Route path="/ticket-curso" element ={<TicketCurso/>} />
 
 
         </Routes>

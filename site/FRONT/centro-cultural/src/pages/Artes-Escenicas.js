@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import "./../styles/globals.css";
 import "./../styles/navBar.css";
 import "./../styles/arteEscenicaPage.css"
@@ -8,6 +8,21 @@ import arte3 from './../assets/arte3.jpg'
 import arte4 from './../assets/arte4.jpg'
 
 const ArtesEscenicasPage = () => {
+  const [data, setData] = useState({})
+  const [categorias, setCategorias] = useState({})
+
+  useEffect(() => {
+   fetch('http://localhost:2000/api/eventosCategoria/630e27a76297a9b293e568c9')
+   .then(res => res.json())
+   .then(data => setData(data))
+   .catch(error => error)
+
+  }, [])
+  
+ // {data.categorias.map((categoria, _id) => {
+  // if(categoria.nombre =)
+ // })}
+
   return (
     <section id="artes-escenicas">
         <p className="title-cs">Artes Escénicas</p>
