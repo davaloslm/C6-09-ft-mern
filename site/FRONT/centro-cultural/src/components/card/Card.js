@@ -1,10 +1,27 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './card.css'
 import brandBlancoCard from '../../assets/centroCard.png'
 import bsAsCard from '../../assets/bsAsCard.png'
 import imgCardArtesEscenicas from '../../assets/img/eternidades.png'
 
 const Card = () => {
+  const [data, setData] = useState({})
+  console.log('ingresando al useefect')
+
+
+  useEffect(() => {
+    console.log('ingresando al useefect')
+    const data = async()=> {
+      await fetch('http://localhost:2000/api/categorias')
+    }
+    data()
+    .then(res => console.log(res) )
+    .catch(error => console.log(error))
+
+    setData(data)
+
+  }, [data])
+  console.log(data)
   return (
     <div className='cardContainer'>
       <div className='card'>

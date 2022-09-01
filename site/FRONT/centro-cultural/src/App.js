@@ -17,6 +17,7 @@ import ComprarEvento from "./components/comprar/ComprarEvento";
 import TicketEvento from "./components/comprar/TicketEvento";
 import ComprarCurso from "./components/comprar/ComprarCurso";
 import TicketCurso from "./components/comprar/TicketCurso";
+import PageEventos from "./pages/PageEventos";
 
 
 
@@ -37,6 +38,7 @@ function App() {
           <Route path="/perfil" element = {<Perfil/>} />
 
 
+          <Route path="/eventos/:itemId" element ={<PageEventos/>} />
           <Route path="/artes-escenicas" element ={<ArtesEscenicasPage/>} />
           <Route path="/artes-visuales" element ={<ArtesVisualesPage/>} />
           <Route path="/musica" element ={<Musica/>} />
