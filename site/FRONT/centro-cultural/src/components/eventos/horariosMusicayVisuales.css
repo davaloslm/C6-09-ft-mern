@@ -1,0 +1,17 @@
+.container-musica-visuales {
+  display: flex;
+  flex-direction: column;
+  width: 328px;
+
+}
+.price-container {
+  width: 328px;
+}
+.container-musica-visuales h2 {
+  font-size: 20px;
+  margin-bottom: 3%;
+}
+.container-musica-visuales p {
+  font-size: 18px;
+
+}

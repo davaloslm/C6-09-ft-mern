@@ -18,6 +18,28 @@ const Formulario = () => {
       setOpenModal(!openModal);
     }
   };
+
+  const confirmarSuscripcion = async() => {
+    console.log(nombre, apellido, email)
+
+   await fetch(`http://localhost:2000/api/suscribirse`, {
+      method: "POST",
+      body: JSON.stringify({
+        nombre: nombre,
+        apellido: apellido,
+        email: email
+      }),
+      headers: {
+        "Content-type": "application/json"
+      }
+    })
+    .then(res => console.log(res))
+      //res.json())
+    .catch(err=> console.log(err)) 
+    console.log(nombre, apellido, email)
+    console.log('Se guardo el email en la base de datos')
+    console.log(process.env.REACT_APP_URL_API)
+  }
   return (
     <section id="Formulario">
       <h1>Estemos en contacto</h1> <br/>
@@ -73,7 +95,10 @@ const Formulario = () => {
                   value="Si"
                   onClick={() => {
                     setOpenModal(!openModal);
-                    setOpenModalConfirmation(!openModalConfirmation)}}
+                    confirmarSuscripcion();
+                    setOpenModalConfirmation(!openModalConfirmation)}
+                    
+                  }
                   className="button-si"
                 />
                 <input
