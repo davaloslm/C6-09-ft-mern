@@ -3,12 +3,12 @@
 .ficha-container {
   display: flex;
   flex-direction: column;
+  text-align: left;
 /*   width: 328px; */
 /*   justify-content: center; */
-  align-items: center;
-  text-align: left;
+  /* align-items: center;
   padding: 15px;
-  margin-left: 4%;
+  margin-left: 4%; */
 
 }
 .ficha-container h2 {
@@ -39,9 +39,9 @@
     line-height: 100%;
     margin-bottom: 3%;
     text-align: left;
-    width: 327px;
+    /* width: 327px;
     height: 28px;
-    margin-left: 8%;
+    margin-left: 8%; */
   }
 
   .ficha-container h3 {
