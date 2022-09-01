@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import ArtesEscenicas from './../components/cursosTalleres/ArtesEscenicas.js'
 import Cine from './../components/cursosTalleres/Cine.js'
 import Fotografia from './../components/cursosTalleres/Fotografia'
@@ -6,8 +6,18 @@ import Escritura from './../components/cursosTalleres/Escritura'
 import Mapa from './../components/home/Mapa'
 import './../styles/cursosTalleres.css'
 import './../styles/globals.css'
+import CursosGenerales from '../components/cursosTalleres/CursosGenerales.js'
 
 const CursosTalleres = () => {
+  const [data, setData] = useState({})
+
+  useEffect(() => {
+    fetch(`http://localhost:2000/api/cursos`)
+      .then((res) => res.json())
+      .then((data) => setData(data))
+      .catch((error) => error);
+  }, []);
+  console.log(data);
   return (
     <section id="cursosTalleres">
       <p className="title-cs">Cursos y Talleres</p>
@@ -17,12 +27,11 @@ const CursosTalleres = () => {
       <br/>
       <p>¡Te esperamos!</p>
       <div className="container-cursosytalleres">
-        
-      <ArtesEscenicas />
-      <Cine />
-      <Fotografia />
-      <Escritura />
-      
+        {data.cursos ? 
+        <>
+          <CursosGenerales idCurso={data.cursos._id} />
+          </>
+        :null}
       </div>
       <br/> <br/>
     </section>

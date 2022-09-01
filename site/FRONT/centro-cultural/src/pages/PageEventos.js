@@ -20,7 +20,7 @@ const PageEventos = (props) => {
       .then((res) => res.json())
       .then((data) => setData(data))
       .catch((error) => error);
-  }, []);
+  }, [params.itemId]);
   console.log(data);
   // {data.categorias.map((categoria, _id) => {
   // if(categoria.nombre =)

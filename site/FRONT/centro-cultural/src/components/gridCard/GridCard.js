@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 const GridCard = () => {
   const [data, setData] = useState({});
   console.log("ingresando al useefect");
-  //console.log(data.categorias[0])
+  //console.log(data.categorias[0])git 
   console.log("leer data");
   console.log(data);
 
