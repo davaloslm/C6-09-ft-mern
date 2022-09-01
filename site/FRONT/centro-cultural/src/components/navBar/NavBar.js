@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import { Link } from "react-router-dom";
+import { Link, NavLink, Navigate } from "react-router-dom";
 import NavBarsocials from './NavBarSocials'
 import { FaBars, FaSistrix, FaUserCircle } from 'react-icons/fa';
 import logo from './../../assets/atomo.svg'
@@ -8,6 +8,7 @@ import perfil from './../../assets/ellipse.png'
 import MenuProgramacion from "./NavBarMobile"
 import './../../styles/navBar.css'
 import Logo from './Logo'
+import './../../styles/globals.css'
 
 
 const NavBar = () => {
@@ -15,6 +16,12 @@ const NavBar = () => {
   const [icon, setIcon] = useState("nav__toggler");
 
 
+    let activeStyle = {
+    backgroundColor: 'var(--color-main)',
+    color: 'white',
+    borderRadius: '10px',
+    };
+    
   const navToggle = () => {
     if(active === "nav__menu"){
       setActive("nav__menu nav__active")
@@ -35,12 +42,13 @@ const NavBar = () => {
         <div className='navHeader'>
           <Link to="/" className="a-header"><Logo /></Link>
           <div className ="menu-desktop">
-          <Link to="/institucional" className="links-nav"><li>Institucional</li></Link>
+          <NavLink  to="institucional" style={({isActive}) => isActive ? activeStyle : undefined}className="links-nav"><li>Institucional</li></NavLink>
+          
                   <li><MenuProgramacion/> </li>
-                  <Link to="/cursosytalleres" className="links-nav"><li>Cursos y talleres</li></Link>
-                  <Link to="/preguntas-frecuentes" className="links-nav"><li>Preguntas Frecuentes</li></Link>
+                  <NavLink to="cursosytalleres" style={({isActive}) => isActive ? activeStyle : undefined} className="links-nav"><li>Cursos y talleres</li></NavLink>
+                  <NavLink to="preguntas-frecuentes" style={({isActive}) => isActive ? activeStyle : undefined} className="links-nav"><li>Preguntas Frecuentes</li></NavLink>
                   <li className="icon-nav"> <i className="icon-nav"> <FaSistrix/></i></li>
-                  <Link to="/perfil" className="links-nav"><li className="icon-nav"><i className="icon-nav"><FaUserCircle/></i></li></Link>
+                  <Link to="perfil" className="links-nav"><li className="icon-nav"><i className="icon-nav"><FaUserCircle/></i></li></Link>
                   
           </div>
 

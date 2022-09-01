@@ -10,7 +10,7 @@ const NavBarMobile = () => {
     }
   return (
     <div className = {`accordion ${isActiveAccordion ? "open" : ""}`}>
-        <div className="menu-desplegable" onClick ={handleClick}>
+    <div className="menu-desplegable"  onClick ={handleClick}>
             <h5>Programación</h5>
             <div className ="arrow-down">
                 <i><FaAngleDown/></i> 

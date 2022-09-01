@@ -188,10 +188,12 @@ hr{
     .icon-nav{
         font-size:24px;
         background:none;
+        cursor:pointer;
     }
-    .icon-nav:hover{
-        border:none;
+    .menu-desktop .icon-nav:hover{
         background-color:transparent;
+        color:black;
+        
     }
     
 }

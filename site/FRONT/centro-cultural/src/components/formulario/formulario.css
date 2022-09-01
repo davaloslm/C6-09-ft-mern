@@ -32,6 +32,13 @@
 
 
 @media screen and (min-width: 1024px){
+  #Formulario {
+    width:inherit;
+    display:flex;
+    flex-direction:column;
+    width:500px;
+    justify-content: center;
+  }
   .formulario {
     width: 612px;
     height: 480px;
@@ -40,6 +47,7 @@
     padding-left: 2%;
     margin-left: 16px;
     padding-top: 10px;
+    margin:0 auto;
   }
   .formulario label {
     font-weight: bold;
@@ -71,6 +79,7 @@
     margin-top: 6%;
     font-size: 25px;
     line-height: 25px;
+    cursor:pointer;
   }
   
 }

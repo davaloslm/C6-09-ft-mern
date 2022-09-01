@@ -1,0 +1,86 @@
+@import url('./globals.css');
+#tucuenta {
+    display:flex;
+    flex-direction: column;
+}
+
+.micuenta-flex img{
+    display:block;
+    height:124px;
+    width:124px;
+    margin:0 auto;
+    border-radius:100%;
+}
+#tucuenta .contain-datos{
+    margin-bottom:40px;
+    margin-left:15px;
+}
+#tucuenta .contain-cuenta{
+    background-color: var(--color-main);
+    color: var(--blanco);
+    margin-bottom:15px;
+    padding:10px;
+    font-weight:600;
+    cursor:pointer;
+}
+#tucuenta h3{
+    margin-top: 15px;
+}
+#tucuenta .datoCuenta{
+    margin-top:15px;
+    margin-left:15px;
+}
+#tucuenta .cerrarsesion{
+    margin:0 auto;
+    margin-top: 15px;
+    font-weight:100;
+}
+
+.card-inscripto{
+    background-color: #7C81B5;
+    color: var(--blanco);
+    margin-bottom:10px;
+    display:none;
+    padding:5px;
+}
+.card-inscripto h1{
+    margin-left:5px;
+    margin-bottom:5px;
+    margin-top:5px;
+}
+.card-inscripto p{
+    margin-bottom:5px;
+    margin-left:5px;
+}
+
+#checkbox-entradas:checked~.card-entradas{
+    display: block;
+}
+#checkbox-cursos:checked~.card-cursos{
+    display:block;
+}
+
+@media (min-width: 1024px){
+    .micuenta-flex{
+        display:flex;
+        flex-direction: row-reverse;
+    }
+    .container-entradasycursos{
+        display:flex;
+        justify-content:center;
+        align-items:stretch;
+        
+    }
+    .card-inscripto{
+        display:block;
+    }
+    .contain-entrada{
+        width:45%;
+        margin-right:20px;
+        /* align-items:stretch; */
+    }
+    .contain-curso{
+        width:45%;
+        /* align-items:stretch; */
+    }
+}

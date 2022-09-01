@@ -1,0 +1,41 @@
+#registro {
+    display:flex;
+    flex-direction:column;
+}
+#registro img{
+    object-fit: cover;
+    height:124px;
+    width:124px;
+    margin:0 auto;
+}
+#registro .registro-datos{
+    font-weight:bold;
+}
+#registro input {
+    margin-bottom:20px;
+}
+#registro button{
+    margin-bottom: 45px;
+}
+@media (min-width: 1024px){
+    #registro {
+        padding:25px;
+    }
+    .section-flex{
+        display:flex;
+        flex-direction:row-reverse;
+    }
+    .registro-form{
+        width:50%;
+    }
+    #registro img{
+        width:150px;
+        height:150px;
+    
+    }
+}
+@media (min-width: 1440px){
+    #registro {
+        padding:50px;
+    }
+}

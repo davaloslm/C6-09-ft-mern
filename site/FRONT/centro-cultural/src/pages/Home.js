@@ -1,6 +1,8 @@
 import React from 'react'
 import '../styles/homecursosTalleres.css'
 import "swiper/css/bundle";
+// import './../styles/home.css'
+// import Mapa from ''
 import GridCard from '../components/gridCard/GridCard'
 import SliderHome from '../components/slider/SliderHome'
 

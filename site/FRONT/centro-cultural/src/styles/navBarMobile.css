@@ -1,11 +1,13 @@
 .accordion ul {
     display: none;
     margin-bottom: 0; 
+    overflow:hidden;
     /* color: #9c9d9d; */
 }
 
 .accordion.open ul{
     display: block;
+    overflow:hidden;
 }
 
 .accordion.open .menu-desplegable .arrow-down{
@@ -21,6 +23,7 @@
 .menuOpen{
     bottom:15px;
     position:relative;
+    
 }
 
 .menu-desplegable{
@@ -30,6 +33,16 @@
 .ulMenuProgramacion  {
     position:relative;
     transition:0.5s;
+}
+.ulMenuProgramacion li{
+    display:flex;
+    align-items: center;
+}
+.puntosubmenu{
+    width:5px;
+    height:5px;
+    background-color: var(--color-secondary);
+    margin-right:10px; 
 }
 
 /* .ulMenuProgramacion li:hover{
@@ -41,22 +54,17 @@
 @media screen and (min-width: 1024px){
     .ulMenuProgramacion{
         position:absolute;
-        background-color:white;
+        background-color:rgb(255, 255, 255, 0.8);
         z-index:155;
-        margin:0;
+        margin:0 auto;
         /* padding:; */
         /* padding-bottom:15px; */
         top:95px;
+        /* right:850px; */
+        margin-right:75px;
         /* padding-left:10px; */
     }
-    .puntosubmenu{
-        width:5px;
-        height:5px;
-        background-color: var(--color-secondary);
-        position:absolute;
-        top:14px;
-        left:2px;
-    }
+    
     .menu-desplegable{
         top: 3.4px;
         position:relative;
@@ -65,9 +73,15 @@
         list-style:none;
         padding:5px;
         color:black;
-        padding-left:10px;
+        /* padding-left:10px; */
+        display:flex;
+        align-items:center;
         position:relative;
-        right:5px;
+        margin: 0 auto;
+        /* right:15px; */
+        /* top:15px; */
+        /* right:15px; */
+        /* overflow:hidden; */
     }
     .ulMenuProgramacion li:hover{
         background-color:transparent;

@@ -12,7 +12,7 @@ const ArtesVisualesPage = () => {
     <section id="artes-escenicas">
         
         <p className="title-cs">Artes Visuales</p>
-        <h3>Programación</h3>
+        <h3 className="title-vistas">Programación</h3>
         <div className="container-programacion">
         <div className="img-card-programacion">
             <img src={visuales1} alt="" />

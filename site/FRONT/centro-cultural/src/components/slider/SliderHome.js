@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from 'react-router-dom';
 import '../card/card.css'
 
 import './sliderHome.css'
@@ -26,7 +27,7 @@ export default function App() {
                           disableOnInteraction: false}}
               className="mySwiper"
       >
-        <SwiperSlide>
+       <SwiperSlide> <Link to="/detail">
           <div className='cardContainer '>
             <div className='card'>
                 <div className='divImgCard imgSliderUno'>
@@ -52,9 +53,10 @@ export default function App() {
                 
             </div>
           </div>
-        </SwiperSlide>
+          </Link> </SwiperSlide>
 
         <SwiperSlide>
+        <Link to="/detail">
         <div className='cardContainer'>
             <div className='card'>
                 <div className='divImgCard imgSliderDos'>
@@ -75,9 +77,9 @@ export default function App() {
                 </div>
             </div>
           </div>
-        </SwiperSlide>
+        </Link></SwiperSlide>
 
-        <SwiperSlide>
+        <SwiperSlide><Link to="/detail">
          <div className='cardContainer'>
             <div className='card'>
                 <div className='divImgCard imgSliderTres'>
@@ -98,9 +100,9 @@ export default function App() {
                 </div>
             </div>
           </div>
-        </SwiperSlide>
+        </Link></SwiperSlide>
 
-        <SwiperSlide>
+        <SwiperSlide><Link to="/detail">
         <div className='cardContainer'>
             <div className='card'>
                 <div className='divImgCard imgSliderCuatro'>
@@ -119,7 +121,7 @@ export default function App() {
                 </div>
             </div>
           </div>
-        </SwiperSlide>
+        </Link></SwiperSlide>
 
       </Swiper>
     </div>

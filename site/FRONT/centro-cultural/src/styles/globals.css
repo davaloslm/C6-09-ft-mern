@@ -3,13 +3,14 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 .subHeader{
     z-index:100;    
 }
 
 body{
-    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-family: 'Antonio', sans-serif;
     color: var(--font-primary);
 }
 
@@ -47,7 +48,7 @@ section {
         padding:25px;
     }
     iframe{
-        width:500px;
+        width:420px;
         height:480px;
     }
     #mapa{

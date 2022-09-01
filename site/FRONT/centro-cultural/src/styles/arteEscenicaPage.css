@@ -28,6 +28,11 @@
 @media screen and (min-width: 1024px){
     #artes-escenicas {
         padding:25px;
+        display:flex;
+        flex-direction: column;
+    }
+    #artes-escenicas .title-vistas{
+        margin-bottom:30px;
     }
     .container-programacion {
         display:flex;
@@ -43,5 +48,14 @@
     .img-card-programacion img{
         width:450px;
         object-fit:contain;
+    }
+}
+@media screen and (min-width: 1440px){
+    .img-card-programacion {
+        width:550px;
+    }
+    .img-card-programacion img{
+        width:550px;
+        object-fit:cover;
     }
 }

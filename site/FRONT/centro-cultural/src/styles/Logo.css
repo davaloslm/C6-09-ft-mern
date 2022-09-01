@@ -1,10 +1,26 @@
+.title-header{
+    line-height:193%;
+    margin-left:10px;
+}
+
 .logo-container{
     display:flex;
 }
-.title-header{
-    margin-left:15px;
-    font-size:14px;
-}
 .logoHeader {
     object-fit: contain;
+}
+/* vista 1440 */
+@media screen and (min-width: 1440px){
+    .logo-container{
+        display:flex;
+        margin-left:83px;
+    }
+    .title-header{
+        margin-left:15px;
+        font-size:14px;
+        line-height:193%;
+    }
+    .logoHeader {
+        object-fit: contain;
+    }
 }
