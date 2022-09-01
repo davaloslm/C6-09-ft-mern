@@ -5,6 +5,7 @@ import FichaTecnica from "../components/eventos/FichaTecnica"
 import Valor from "../components/eventos/Valor"
 import "../styles/detalleEvento.css"
 import HorariosEscenicasCine from '../components/eventos/HorariosEscenicasCine'
+//import CardDos from '../components/card/CardDos'
 
 const Detail = () => {
     return (
@@ -15,6 +16,7 @@ const Detail = () => {
             </div>
 
             <Card/>
+
 
             <HorariosEscenicasCine
                 fechaDeInicio = "Viernes 8 de Julio"
