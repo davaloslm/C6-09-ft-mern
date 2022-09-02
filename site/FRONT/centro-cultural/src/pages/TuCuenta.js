@@ -1,8 +1,26 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import logoTest from "./../assets/logoTest.png";
 import "./../styles/TuCuenta.css";
 
 const TuCuenta = () => {
+  const [datosUsuario, setDatosUsuario] = useState({})
+  const navigate = useNavigate()
+
+  useEffect(() => {
+    const token = localStorage.getItem('token')
+    const datos = JSON.parse(localStorage.getItem('datosUsuario'))
+    setDatosUsuario({
+      ...datosUsuario,
+      datos
+    })
+    console.log(datos)
+    console.log(token)
+    if(token === null){
+      navigate('/')
+    }
+  }, [])
+  console.log(datosUsuario)
 	return (
 		<section id="tucuenta">
 			<p className="title-cs">Tu Perfil</p>
@@ -10,13 +28,13 @@ const TuCuenta = () => {
 				<img src={logoTest} alt="tuLogo" />
 				<div className="contain-datos">
 					<h3>Nombre</h3>
-					<p className="datoCuenta">Leandro</p>
+					<p className="datoCuenta">{datosUsuario ? datosUsuario.datos.nombre : null}</p>
 					<h3>Apellido</h3>
-					<p className="datoCuenta">Ibarra</p>
+					<p className="datoCuenta">{datosUsuario ? datosUsuario.datos.apellido : null}</p>
 					<h3>Correo Electrónico</h3>
-					<p className="datoCuenta">leandroibarra@tucorreo.com.ar</p>
+					<p className="datoCuenta">{datosUsuario ? datosUsuario.datos.email : null}</p>
 					<h3>DNI</h3>
-					<p className="datoCuenta">1234567</p>
+					<p className="datoCuenta">{datosUsuario ? datosUsuario.datos.dni : null}</p>
 				</div>
 			</div>
 

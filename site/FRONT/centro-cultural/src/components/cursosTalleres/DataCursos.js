@@ -1,9 +1,10 @@
 import React from 'react'
 import './../../styles/globals.css'
 import './../../styles/cursosTalleres.css'
+import { Link } from 'react-router-dom'
 // import {cursoArteEscenica} from './data'
 
-const DataCursos = ({children}) => {
+const DataCursos = ({idCurso, children}) => {
   return (
     <>
     <div className="container-cursos">
@@ -15,7 +16,9 @@ const DataCursos = ({children}) => {
         </ul>
         {children}
     </div>
-        <button>Inscribirme</button>
+      <Link to={(`/comprar-curso/${idCurso}`)}>
+        <button >Inscribirme</button>
+        </Link>
     </>
   )
 }

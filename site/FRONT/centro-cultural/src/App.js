@@ -19,6 +19,7 @@ import TicketEvento from "./components/comprar/TicketEvento";
 import ComprarCurso from "./components/comprar/ComprarCurso";
 import TicketCurso from "./components/comprar/TicketCurso";
 import PageEventos from "./pages/PageEventos";
+import PaginaBusqueda from "./pages/PaginaBusqueda";
 
 
 
@@ -36,6 +37,8 @@ function App() {
           <Route path="/cursosytalleres" element ={<CursosTalleres/>} />
 
           <Route path="/detail" element = {<Detail/>} />
+          <Route path="/registro" element = {<Registro/>} />
+          <Route path="/cuenta" element = {<TuCuenta/>} />
           <Route path="/perfil" element = {<Perfil/>} />
 
 
@@ -47,8 +50,9 @@ function App() {
           <Route path="/preguntas-frecuentes" element ={<PreguntasFrecuentes/>} />
           <Route path="/comprar-evento" element ={<ComprarEvento/>} />
           <Route path="/ticket-evento" element ={<TicketEvento/>} />
-          <Route path="/comprar-curso" element ={<ComprarCurso/>} />
+          <Route path="/comprar-curso/:idCurso" element ={<ComprarCurso/>} />
           <Route path="/ticket-curso" element ={<TicketCurso/>} />
+          <Route path="/resultado-busqueda" element ={<PaginaBusqueda/>} />
 
 
         </Routes>

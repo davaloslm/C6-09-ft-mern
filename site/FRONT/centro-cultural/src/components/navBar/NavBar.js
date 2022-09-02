@@ -9,6 +9,7 @@ import MenuProgramacion from "./NavBarMobile"
 import './../../styles/navBar.css'
 import Logo from './Logo'
 import './../../styles/globals.css'
+import Buscador from './Buscador';
 
 
 const NavBar = () => {
@@ -76,14 +77,8 @@ const NavBar = () => {
                   <hr/>
                 
                 
-
-                <div className='divBuscarMenu'>
-                    <input placeholder='Buscar...' />
-                    {/* <button> */}
-                      <FaSistrix className="icon-header-mobile"/>
-                    {/* <img src={lupa} alt="buscar"/> */}
-                    {/* </button> */}
-                </div>
+                <Buscador/>
+                
                 <hr/>
             </ul>
         </div>

@@ -38,7 +38,7 @@ const GridCard = () => {
 
           {data.categorias
             ? data.categorias.map((categoria) => (
-                <div className="cardGridUno">
+                <div key={categoria._id} className="cardGridUno">
                   <Link to={(`/eventos/${categoria._id}`)}>
                     <img src={categoria.imagen} alt="" />
                     <h3>{categoria.nombre}</h3>
