@@ -13,6 +13,19 @@
     padding: 6px 10px;
 }
 
+input{
+    margin-bottom:20px;
+    margin-top:5px;
+    display:block;
+    widtH:100%;
+    border:none;
+    height:32px;
+    background-color: #FBF1EF;
+    padding:5px;
+    font-size:18px;
+    font-style:italic;
+}
+
 .titleComprar{
     font-family: 'Antonio';
     font-style: normal;
@@ -86,7 +99,7 @@
     background: #FBF1EF;
     color: #393842;
     padding: 7px 15px 1px;
-    font-family: 'Fira Sans Extra Condensed';/* no agarra el estilo de letra*/
+    /*font-family: 'Fira Sans Extra Condensed';/* no agarra el estilo de letra*/
     font-style: italic;
     font-weight: 300;
     font-size: 18px;
@@ -168,8 +181,8 @@ width: 160px;
     margin-bottom: 16px;
 }
 .inputPago{
-    font-family: 'Fira Sans Extra Condensed';
-    font-style: italic !important;
+    /* font-family: 'Fira Sans Extra Condensed'; */
+    font-style: italic;
     font-weight: 300;
     font-size: 18px;
     line-height: 100%;
@@ -289,7 +302,7 @@ height: 24px;
 }
 
 .infoImgCardComprarEvento{
-    display: none;        
+    display: none;      
 }
 
 .divImporteTicket{
@@ -399,7 +412,7 @@ height: 24px;
         font-weight: 100;
         font-size: 22px;
         line-height: 28px;
-        z-index: 10000000000;
+        z-index: 100;
         background: #D55F60;
         color: #FAFAF9;
         justify-content: center;

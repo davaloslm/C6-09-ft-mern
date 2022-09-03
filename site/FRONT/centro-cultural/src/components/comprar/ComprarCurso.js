@@ -162,7 +162,7 @@ const ComprarCurso = () => {
           <label>
             Número de la Tarjeta
             <input
-              type="text"
+              type="number"
               placeholder="ingresa los 16 dígitos de la tarjeta"
               className="inputPago"
               name="numerosTarjeta"
@@ -179,7 +179,7 @@ const ComprarCurso = () => {
           <label>
             Fecha de Vencimiento
             <input
-              type="text"
+              type="number"
               placeholder="mm/aa"
               className="inputPago"
               name="fechaVencimiento"
@@ -196,7 +196,7 @@ const ComprarCurso = () => {
           <label>
             Código de Seguridad
             <input
-              type="text"
+              type="number"
               placeholder="xxx"
               className="inputPago"
               name="cvc"

@@ -6,6 +6,7 @@
     object-fit: cover;
     height:124px;
     width:124px;
+    display:block;
     margin:0 auto;
 }
 #registro .registro-datos{
@@ -13,6 +14,16 @@
 }
 #registro input {
     margin-bottom:20px;
+    margin-top:5px;
+    display:block;
+    widtH:100%;
+    border:none;
+    height:32px;
+    background-color: #FBF1EF;
+    padding:5px;
+    font-size:18px;
+    font-style:italic;
+    
 }
 #registro button{
     margin-bottom: 45px;
@@ -20,6 +31,9 @@
 @media (min-width: 1024px){
     #registro {
         padding:25px;
+    }
+    #registro input {
+        width:75%;
     }
     .section-flex{
         display:flex;

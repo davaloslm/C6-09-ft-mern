@@ -108,7 +108,7 @@ const ComprarEvento = () => {
                     </label>
 
                     <label>Correo Electronico
-                        <input type="text" placeholder="Correo Electronico" className="inputPersonal" onChange={handleInputChange} name="apellido"></input>
+                        <input type="mail" placeholder="Correo Electronico" className="inputPersonal" onChange={handleInputChange} name="apellido"></input>
                     </label>            
 
                     <label> DNI
@@ -120,7 +120,7 @@ const ComprarEvento = () => {
                 <form className="formPagoTarjeta" onSubmit={enviarDatos}>
                     <h2>Datos de Pago</h2>
                         <label>Número de la Tarjeta   
-                            <input type="text" placeholder="ingresa los 16 dígitos de la tarjeta" className="inputPago" onChange={handleInputChange} name="nombre"></input>
+                            <input type="number" placeholder="ingresa los 16 dígitos de la tarjeta" className="inputPago" onChange={handleInputChange} name="nombre"></input>
                         </label>
 
                         <label>Fecha de Vencimiento
@@ -128,7 +128,7 @@ const ComprarEvento = () => {
                         </label>
 
                         <label>Código de Seguridad
-                            <input type="text" placeholder="xxx" className="inputPago" onChange={handleInputChange} name="apellido"></input>
+                            <input type="number" placeholder="xxx" className="inputPago" onChange={handleInputChange} name="apellido"></input>
                         </label>            
 
                         <label> Nombre y Apellido
