@@ -14,14 +14,14 @@ export const evento =
       reemplazo: 'Karina Barda'
   }
 console.log(evento)
-const Sinopsis = () => {
+const Sinopsis = (props) => {
   return (
     <div className='container-sinopsis'>
       <h2>Sinopsis</h2>
       <div>
-        <p>{evento.descripcion}</p>
-        <p>{evento.descripcion1}</p>
-        <p>{evento.descripcion2}</p>
+        <p>{props.descripcion}</p>
+        {/* <p>{evento.descripcion1}</p>
+        <p>{evento.descripcion2}</p> */}
       </div>
     </div>
   )

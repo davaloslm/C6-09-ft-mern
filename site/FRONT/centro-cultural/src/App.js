@@ -3,7 +3,7 @@ import NavBar from "./components/navBar/NavBar";
 import Home from "./pages/Home";
 import Institucional from "./pages/Institucional";
 import CursosTalleres from "./pages/CursosTalleres";
-import Detail from "./pages/Detail";
+import DetalleEscenicasCine from "./pages/DetalleEscenicasCine";
 import Perfil from "./pages/Perfil";
 import NavBarSocials from "../src/components/navBar/NavBarSocials"
 import ArtesEscenicasPage from './pages/Artes-Escenicas.js'
@@ -36,7 +36,7 @@ function App() {
           <Route path="/institucional" element ={<Institucional/>} />
           <Route path="/cursosytalleres" element ={<CursosTalleres/>} />
 
-          <Route path="/detail" element = {<Detail/>} />
+          <Route path="/evento/escenicas-cine/:idEvento" element = {<DetalleEscenicasCine/>} />
           <Route path="/registro" element = {<Registro/>} />
           <Route path="/cuenta" element = {<TuCuenta/>} />
           <Route path="/perfil" element = {<Perfil/>} />
