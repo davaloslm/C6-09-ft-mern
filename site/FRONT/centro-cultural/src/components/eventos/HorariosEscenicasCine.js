@@ -11,9 +11,9 @@ function HorariosEscenicasCine(props) {
         <>
         <div className='horarios-escenicas-cine-container'>
             <span className='event-horario'>Horario</span>
-            <p ><b>Funciones</b></p>
-            <p>{props.funciones}</p>
-
+            {props.funciones ? <p ><b>Funciones</b></p> : null}
+            {props.funciones ? <p>{props.funciones}</p> : null}
+            
 
         </div>
         </>

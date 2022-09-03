@@ -4,10 +4,11 @@ const HorariosMusicayVisuales = (props) => {
   return (
     <div className='container-musica-visuales'>
       <h2>Horarios</h2>
-      <p><strong>Inauguración y Cierre</strong></p>
-      <p>{props.fecha}</p>
+      {props.fecha ? <p><strong>Inauguración y Cierre</strong></p> : null}
+      {props.fecha ? <p>{props.fecha}</p> : null}
+      
       <br/>
-      <p>{props.hora}</p>
+      <p>{props.horarios}</p>
     </div>
 
   )

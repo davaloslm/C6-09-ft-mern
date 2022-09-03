@@ -23,7 +23,7 @@
 .ficha-container h3 {
   font-size: 18px;
   line-height: 100%;
-  color: var(--font-primary);
+  /* color: var(--font-primary); */
   opacity: 0.95;
 }
 .ficha-container p {
@@ -50,5 +50,6 @@
 
   .ficha-container p {
     font-size: 28px;
+    line-height: 100%;
   }
 }

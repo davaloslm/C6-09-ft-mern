@@ -35,7 +35,6 @@ section.event{
 
     .event-container{
         width: 1240px;
-        height: 800px;
         margin: 0 auto;
 
     }
@@ -43,7 +42,7 @@ section.event{
     div.event-grid-container {
         display: grid;
         grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: repeat(5, 1fr);
+        grid-template-rows: repeat(1, 1fr);
         grid-column-gap: 0px;
         grid-row-gap: 0px;
         
@@ -51,8 +50,9 @@ section.event{
         
     .event-grid-1 {
         grid-area:  1 / 5 / 2 / 7;
-        background-color: #f1f1f1;
+        background-color: #ddd;
         margin-left: 16px;
+        padding: 16px;
     } 
     .event-grid-2 { grid-area:  1 / 1 / 2 / 5; }
     .event-grid-3 { grid-area:  2 / 1 / 3 / 5; }
