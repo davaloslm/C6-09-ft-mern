@@ -6,7 +6,7 @@ import FichaTecnicaCine from "../components/eventos/FichaTecnicaCine"
 import Valor from "../components/eventos/Valor"
 import "../styles/detalleEvento.css"
 import HorariosEscenicasCine from '../components/eventos/HorariosEscenicasCine'
-import { useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import HorariosMusicayVisuales from '../components/eventos/HorariosMusicayVisuales'
 //import CardDos from '../components/card/CardDos'
 
@@ -33,7 +33,9 @@ const DetalleEvento = () => {
                 Evento
             </div>
 
-            <Card/>
+            <Card
+                descripcionCard= {data.evento ? data.evento.descripcionCard : null}
+            />
 
             <div className='event-container'>
             <div className='event-grid-container'>
@@ -56,9 +58,11 @@ const DetalleEvento = () => {
                         precio= {data.evento ? data.evento.precio : null}    
                     />
 
+                    <Link to={(`/comprar-evento/${data.evento._id}`)}>
                     <button>
                         Comprar entrada
                     </button>
+                    </Link>
                 </div>
 
                 <div className='event-grid-2'>
@@ -98,10 +102,11 @@ const DetalleEvento = () => {
             </div>
             </div>
 
-
+            <Link to={(`/comprar-evento/${data.evento._id}`)}>
             <button className='bottom-button'>
                 Comprar entrada
             </button>
+            </Link>
 
         </section>
         </>

@@ -20,7 +20,7 @@ const Card = () => {
 
     setData(data)
 
-  }, [data])
+  }, [])
   console.log(data)
   return (
     <div className='cardContainer'>
